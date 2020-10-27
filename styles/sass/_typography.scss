@@ -1,14 +1,10 @@
-// fonts:
-/*
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Josefin Sans', sans-serif;
-*/
-
+// FONT VARIABLES
 $mainFont: 'Josefin Sans', sans-serif;
 $bodyFont: 'Barlow', sans-serif;
 
 body {
     font-family: $mainFont;
+    color: $white;
     p, footer {
         font-family: $bodyFont;
     }

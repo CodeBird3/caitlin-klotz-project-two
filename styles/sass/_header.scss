@@ -1,0 +1,31 @@
+// VARIABLES
+// banner images path
+$imagePath: "../assets";
+
+// background banners
+    // home page
+.homePage {
+    background-image: url(#{$imagePath}/home-header.jpg);
+}
+    // blog page
+.blogPage {
+    background-image: url(#{$imagePath}/blog-header.jpg);
+}
+    // contact page
+.contactPage {
+    background-image: url(#{$imagePath}/contact-header.jpg);
+}
+
+
+// navigation styles
+    // NOTE does the current page stay highlighted in the navBar?
+.navBar {
+    display: flex;
+    list-style: none;
+    
+    a {
+        text-decoration: none;
+        padding: 15px 30px;
+        color: inherit;
+    }
+}

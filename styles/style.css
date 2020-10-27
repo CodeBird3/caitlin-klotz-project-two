@@ -245,22 +245,40 @@ html {
     wrapper
     overall margin/padding
 */
-/*
-    Sunflower Yellow: #ffd300
-    White: #ffffff;
-*/
 main, aside {
   background-color: #2b331b;
 }
 
-/*
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Josefin Sans', sans-serif;
-*/
 body {
   font-family: "Josefin Sans", sans-serif;
+  color: #ffffff;
 }
 
 body p, body footer {
   font-family: "Barlow", sans-serif;
+}
+
+.homePage {
+  background-image: url(../assets/home-header.jpg);
+}
+
+.blogPage {
+  background-image: url(../assets/blog-header.jpg);
+}
+
+.contactPage {
+  background-image: url(../assets/contact-header.jpg);
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.navBar a {
+  text-decoration: none;
+  padding: 15px 30px;
+  color: inherit;
 }
