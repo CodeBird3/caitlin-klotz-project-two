@@ -1,0 +1,28 @@
+// stripping styles
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* INCLUDE
+    html font-size
+    wrapper
+    overall margin/padding
+*/
+
+// COLOUR PALETTE
+
+/*
+    Sunflower Yellow: #ffd300
+    White: #ffffff;
+*/
+
+$sunflowerYellow: #ffd300;
+$white: #ffffff;
+$almostBlack: #171b0e;
+$pine: #2b331b;
+$black: #0f0f0f;
+
+main, aside {
+    background-color: $pine;
+}

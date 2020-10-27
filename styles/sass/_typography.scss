@@ -1,0 +1,15 @@
+// fonts:
+/*
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+*/
+
+$mainFont: 'Josefin Sans', sans-serif;
+$bodyFont: 'Barlow', sans-serif;
+
+body {
+    font-family: $mainFont;
+    p, footer {
+        font-family: $bodyFont;
+    }
+}

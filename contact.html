@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- stylesheets -->
+    <!-- Font Awesome stylesheet -->
+    <script src="https://kit.fontawesome.com/5c8009c014.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- external stylesheet -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Project 2 - Contact</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <li><a href="index.html">Home</a></li>
+            <!-- REVIEW get to a certain section on home page -->
+            <li><a href="#about">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <!-- REVIEW better to use #? -->
+            <li><a href="contact.html">Contact</a></li>
+        </nav>
+        <h1>Get in Touch</h1>
+    </header>
+
+    <main>
+        <section class="contactInfo">
+            <!-- Font Awesome Social Media Icons -->
+            <div class="socialMedia">
+                <!-- facebook -->
+                <i class="fab fa-facebook-f facebook"></i>
+                <!-- instagram -->
+                <i class="fab fa-instagram instagram"></i>
+                <!-- twitter -->
+                <i class="fab fa-twitter twitter"></i>
+                <!-- whatsapp -->
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <p>info@email.com</p>
+            <p>123-456-7890</p>
+            <p>123 Queen Street West, Unit 10</p>
+            <p>Toronto, Ontario</p>
+            <p>M5V2D5</p>
+        </section>
+        <form action="POST">
+            <!-- NOTE Are any of these fields required? -->
+            <label for="name" class="srOnly">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name">
+
+            <label for="email" class="srOnly">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Email address">
+
+            <label for="message" class="srOnly">Message</label>
+            <!-- TODO change cols and rows -->
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>Copyright <i class="far fa-copyright"></i> 2019 <a href="https://junocollege.com/">Juno College</a></footer>
+
+</body>
+</html>
