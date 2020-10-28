@@ -4,11 +4,24 @@
     padding: 0;
 }
 
-/* INCLUDE
-    html font-size
-    wrapper
-    overall margin/padding
-*/
+html {
+    font-size: 62.5%;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    width: 90%;
+    min-width: 1400px;
+    margin: 0 auto;
+}
 
 // COLOUR VARIABLES
 $sunflowerYellow: #ffd300;

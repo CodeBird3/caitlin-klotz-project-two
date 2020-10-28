@@ -18,37 +18,40 @@
 <body>
     
     <header class="homePage">
-        <nav class="navBar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </nav>
-        <h1>The <span>Restaurant</span> Mall</h1>
+        <div class="wrapper">
+            <nav class="navBar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </nav>
+            <h1>The <span>Restaurant</span> Mall</h1>
+        </div>
     </header>
 
     <main>
         <!-- SECTION about -->
         <!-- NOTE these sections should probably link to other pages too -->
         <!-- NOTE these sections have icons before the headings - use ::before -->
-        <section id="about">
+        <!-- REVIEW with designer if this OR the nature section is the About section -->
+        <section class="about wrapper" id="about">
             <section>
-                <h2>Location</h2>
+                <h2 class="heading">Location</h2>
                 <p>Bacon ipsum dolor amet chicken sirloin bacon venison. Turkey swine ribeye, tail short loin short ribs venison pork belly prosciutto jowl strip steak leberkas cupim tenderloin hamburger.</p>
             </section>
             <section>
-                <h2>Community</h2>
+                <h2 class="heading">Community</h2>
                 <p>Bacon ipsum dolor amet chicken sirloin bacon venison. Turkey swine ribeye, tail short loin short ribs venison pork belly prosciutto jowl strip steak leberkas cupim tenderloin hamburger.</p>
             </section>
             <figure>
                 <img src="./assets/home-box-header.png" alt="Chipotle Salad">
             </figure>
             <section>
-                <h2>Blog</h2>
+                <h2 class="heading">Blog</h2>
                 <p>Bacon ipsum dolor amet chicken sirloin bacon venison. Turkey swine ribeye, tail short loin short ribs venison pork belly prosciutto jowl strip steak leberkas cupim tenderloin hamburger.</p>
             </section>
             <section>
-                <h2>Get in Touch</h2>
+                <h2 class="heading">Get in Touch</h2>
                 <p>Bacon ipsum dolor amet chicken sirloin bacon venison. Turkey swine ribeye, tail short loin short ribs venison pork belly prosciutto jowl strip steak leberkas cupim tenderloin hamburger.</p>
             </section>
         </section>
@@ -56,20 +59,20 @@
 
         <!-- SECTION blog? -->
         <!-- NOTE these images need borders -->
-        <section>
+        <section class="blog">
             <figure>
                 <img src="./assets/left-image.jpg" alt="House Burger and Fries">
             </figure>
-            <section>
-                <h2>Best Burgers</h2>
+            <section class="wrapper">
+                <h2 class="heading--small">Best Burgers</h2>
                 <p>Bacon ipsum dolor amet chicken sirloin bacon venison. Turkey swine ribeye, tail short loin short ribs venison pork belly prosciutto jowl strip steak leberkas cupim tenderloin hamburger.</p>
                 <a href="blog.html">Read More</a>
             </section>
             <figure>
                 <img src="./assets/right-image.jpg" alt="Green Gazpacho">
             </figure>
-            <section>
-                <h2>Try Something New</h2>
+            <section class="wrapper">
+                <h2 class="heading--small">Try Something New</h2>
                 <p>Bacon ipsum dolor amet chicken sirloin bacon venison. Turkey swine ribeye, tail short loin short ribs venison pork belly prosciutto jowl strip steak leberkas cupim tenderloin hamburger.</p>
                 <a href="blog.html">Read More</a>
             </section>
@@ -77,8 +80,8 @@
         <!-- !SECTION blog? -->
 
         <!-- SECTION contest -->
-        <section>
-            <h2>Win a $100 Gift Card</h2>
+        <section class="contest wrapper">
+            <h2 class="heading--centre">Win a $100 Gift Card</h2>
             <p>Bacon ipsum dolor amet chicken sirloin bacon venison. Turkey swine ribeye, tail short loin short ribs venison pork belly prosciutto jowl strip steak leberkas cupim tenderloin hamburger.</p>
             <a href="#">Find out More</a>
         </section>
@@ -86,14 +89,15 @@
 
         <!-- SECTION nature -->
         <!-- NOTE this image needs a border -->
-        <section>
+        <section class="nature">
             <figure>
                 <img src="./assets/banner.jpg" alt="Front of The Restaurant Mall's ordering counter">
             </figure>
-            <div>
+            <div class="wrapper">
                 <figure>
                     <img src="./assets/square-image.jpg" alt="Seating Area inside our greenhouse">
                 </figure>
+                <h2 class="heading--centre">Bringing Nature in Spaces</h2>
                 <p>Bacon ipsum dolor amet chicken sirloin bacon venison. Turkey swine ribeye, tail short loin short ribs venison pork belly prosciutto jowl strip steak leberkas cupim tenderloin hamburger. Pork belly t-bone burgdoggen, biltong jerky short loin shoulder buffalo chicken beef pancetta pork. Swine t-bone shankle tenderloin, kielbasa capicola cow bresaola ground round pork beef chicken. Alcatra buffalo pig capicola, short ribs meatloaf ham ham hock tenderloin.</p>
                 <a href="#">Find out More</a>
             </div>
@@ -103,15 +107,17 @@
 
         <!-- SECTION gallery -->
         <section>
-            <figure>
-                <img src="./assets/gallery-image-1.jpg" alt="Light bulbs outside of our restaurant">
-            </figure>
-            <figure>
-                <img src="./assets/gallery-image-2.jpg" alt="Take Away sign">
-            </figure>
-            <figure>
-                <img src="./assets/gallery-image-3.jpg" alt="Some of our delicious sides">
-            </figure>
+            <div class="wrapper">
+                <figure>
+                    <img src="./assets/gallery-image-1.jpg" alt="Light bulbs outside of our restaurant">
+                </figure>
+                <figure>
+                    <img src="./assets/gallery-image-2.jpg" alt="Take Away sign">
+                </figure>
+                <figure>
+                    <img src="./assets/gallery-image-3.jpg" alt="Some of our delicious sides">
+                </figure>
+            </div>
         </section>
         <!-- !SECTION gallery -->
     </main>

@@ -3,6 +3,9 @@
 $imagePath: "../assets";
 
 // background banners
+header {
+    height: 70vh;
+}
     // home page
 .homePage {
     background-image: url(#{$imagePath}/home-header.jpg);
