@@ -1,0 +1,110 @@
+// Font Awesome ::before elements for about? section on home page
+@mixin iconStyles() {
+    font-family: "Font Awesome 5 Free";
+    font-size: 25px;
+    font-weight: 900;
+    color: $pine;
+    position: absolute;
+    z-index: 10;
+}
+
+@mixin iconBackground() {
+    content: "\f111";
+    font-family: "Font Awesome 5 Free";
+    font-size: 50px;
+    font-weight: 900;
+    color: $sunflowerYellow;
+    position: absolute;
+    left: 0;
+}
+
+// SECTION about section on home page
+.about .heading {
+    position: relative;
+    padding-left: 70px;
+}
+
+.about .heading::after {
+    @include iconBackground();
+}
+
+.heading.location::before {
+    // map-marker-alt icon
+    content: "\f3c5";
+    @include iconStyles();
+    left: 16px;
+}
+
+.heading.community::before {
+    // users icon
+    content: "\f0c0";
+    @include iconStyles();
+    left: 9.5px;
+}
+
+.heading.blog::before {
+    // file icon
+    content: "\f15b";
+    @include iconStyles();
+    left: 16px;
+}
+
+.heading.phone::before {
+    // phone icon
+    content: "\f095";
+    @include iconStyles();
+    left: 12px;
+}
+
+// about section on home page
+.about {
+    padding: 200px 0;
+    position: relative;
+}
+
+.aboutFlex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about figure {
+    width: 50vw;
+    position: absolute;
+    right: 0;
+    bottom: 650px;
+}
+
+.aboutFlex section {
+    width: 50%;
+}
+
+.aboutFlex section p {
+    padding-left: 72px;
+    padding-right: 20px;
+}
+// !SECTION about section on home page
+
+// SECTION blog section on home page
+// NOTE text sections are not conforming to the wrapper class
+.blogSection {
+    display: flex;
+    flex-wrap: wrap;
+    background: $almostBlack;
+}
+
+.blogSection figure,
+.blogSection section {
+    width: 50%;
+    padding: 50px;
+    border: 3px solid peachpuff;
+}
+
+.blogSection figure {
+    position: relative;
+}
+
+.homePageBurger {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

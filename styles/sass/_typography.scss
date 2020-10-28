@@ -5,31 +5,59 @@ $bodyFont: 'Barlow', sans-serif;
 body {
     font-family: $mainFont;
     color: $white;
-    p, footer {
+    font-weight: 400;
+    h3, p, footer, aside ul {
         font-family: $bodyFont;
+        font-size: 2rem;
+        line-height: 28px; // TODO determine ratio
+        letter-spacing: 1px; // TODO determine ratio?
+    }
+    a {
+        font-size: 2.24rem;
+        color: inherit;
+        text-align: center; // REVIEW
+        text-decoration: none;
+        line-height: 41.6px;
     }
 }
 
-h1, h2, h3 {
+h1, h2 {
     text-transform: uppercase;
 }
 
 // font sizes
-h1 {
-    font-size: 6.9rem;
+nav {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 29px; // TODO determine ratio
+    letter-spacing: 1px; // TODO determine ratio?
 }
 
-p, footer {
-    font-size: 2rem;
-    line-height: 28px; // TODO determine ratio
-    letter-spacing: 1px; // TODO determine ratio?
+h1 {
+    font-size: 6.9rem;
+    font-weight: 600;
+    // width: calc(100%/3);
+}
+
+h1 span {
+    display: inline-block;
+    background: $white;
+    color: $almostBlack;
+    height: 6.9rem;
+}
+
+h3 {
+    font-weight: bold;
 }
 
 .heading {
     font-size: 4.5rem;
+    font-weight: inherit;
     line-height: 99.8px; // TODO determine ratio
     &--small {
         font-size: 4rem;
+        font-weight: inherit;
         line-height: 58px; // TODO determine ratio
         letter-spacing: 1.3px; // TODO determine ratio?
     }
@@ -39,4 +67,18 @@ p, footer {
 .contest h2,
 .nature h2 {
     text-align: center;
+    color: $sunflowerYellow;
+}
+
+.employment h2,
+.comments h3 {
+    color: $sunflowerYellow;
+}
+
+aside h2 {
+    font-size: 2.5rem;
+    font-weight: inherit;
+    color: $sunflowerYellow;
+    line-height: 58px; // TODO determine ratio
+    letter-spacing: 0.8px; // TODO determine ratio?
 }
