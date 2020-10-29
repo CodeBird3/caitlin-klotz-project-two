@@ -275,7 +275,8 @@ body a {
   line-height: 41.6px;
 }
 
-h1, h2 {
+h1, h2,
+.readMore {
   text-transform: uppercase;
 }
 
@@ -317,11 +318,7 @@ h3 {
 }
 
 .contest h2,
-.nature h2 {
-  text-align: center;
-  color: #ffd300;
-}
-
+.nature h2,
 .employment h2,
 .comments h3 {
   color: #ffd300;
@@ -424,7 +421,7 @@ header {
 }
 
 .about {
-  padding: 200px 0;
+  padding: 200px 0 150px;
   position: relative;
 }
 
@@ -440,7 +437,7 @@ header {
   width: 50vw;
   position: absolute;
   right: 0;
-  bottom: 650px;
+  bottom: 600px;
 }
 
 .aboutFlex section {
@@ -459,23 +456,142 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background: #171b0e;
+  padding-bottom: 35px;
 }
 
-.blogSection figure,
-.blogSection section {
-  width: 50%;
-  padding: 50px;
-  border: 3px solid peachpuff;
+.blogSection .textCard,
+.blogSection figure {
+  width: calc(50% - 20px);
 }
 
 .blogSection figure {
   position: relative;
 }
 
-.homePageBurger {
+.homePageBurger, .card3 {
+  margin-right: 20px;
+}
+
+.homePageGazpacho, .card2 {
+  margin-left: 20px;
+}
+
+.homePageBurger img {
+  width: 90%;
+  -webkit-box-shadow: 20px 20px #ffd300;
+          box-shadow: 20px 20px #ffd300;
   position: absolute;
-  top: 0;
+  top: -57px;
   left: 0;
+}
+
+.homePageGazpacho img {
+  width: 85%;
+  -webkit-box-shadow: -20px 20px #ffd300;
+          box-shadow: -20px 20px #ffd300;
+  position: absolute;
+  right: 0;
+  bottom: -55px;
+}
+
+.textCard {
+  padding-top: 62px;
+}
+
+.textCard p {
+  padding: 20px 10%;
+}
+
+.card3 {
+  text-align: right;
+}
+
+.card3 h2 {
+  padding-right: 10%;
+}
+
+.card3 a {
+  margin-right: 10%;
+}
+
+.card2 h2 {
+  padding-left: 10%;
+}
+
+.card2 a {
+  margin-left: 10%;
+}
+
+.readMore {
+  display: inline-block;
+  color: #171b0e;
+  background: #ffd300;
+  padding: 5px 7px 0;
+  margin: 20px 0;
+}
+
+.contest {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.contest p {
+  padding: 0 60px;
+}
+
+.findOutMore {
+  display: inline-block;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #0f0f0f;
+  margin-top: 40px;
+  padding: 5px 20px 0;
+}
+
+.natureFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0;
+}
+
+.natureImage {
+  width: calc(35% - 90px);
+  margin: 25px 45px;
+  position: relative;
+}
+
+.natureImage img {
+  width: 90%;
+  -webkit-box-shadow: -20px 20px #ffd300;
+          box-shadow: -20px 20px #ffd300;
+  position: absolute;
+  right: 0;
+}
+
+.natureText {
+  width: 65%;
+  padding-left: 60px;
+}
+
+.gallery {
+  background: #171b0e;
+  padding: 80px 0;
+}
+
+.galleryImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery figure {
+  width: calc((100%/3) - 30px);
+  margin: 0 15px;
+}
+
+.gallery figure:last-of-type {
+  margin-right: 0;
 }
 
 footer {

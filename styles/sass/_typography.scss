@@ -21,7 +21,8 @@ body {
     }
 }
 
-h1, h2 {
+h1, h2,
+.readMore {
     text-transform: uppercase;
 }
 
@@ -63,13 +64,9 @@ h3 {
     }
 }
 
-// REVIEW why they won't inherit .heading font-size
+// REVIEW why first two won't inherit .heading font-size
 .contest h2,
-.nature h2 {
-    text-align: center;
-    color: $sunflowerYellow;
-}
-
+.nature h2,
 .employment h2,
 .comments h3 {
     color: $sunflowerYellow;
