@@ -22,7 +22,7 @@
             <nav class="navBar">
                 <li><a href="index.html">Home</a></li>
                 <!-- REVIEW get to a certain section on home page -->
-                <li><a href="#about">About</a></li>
+                <li><a href="index.html#about">About</a></li>
                 <!-- REVIEW better to use #? -->
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -56,7 +56,7 @@
                 <h3>Wednesday October 10th, 2019 by Lisa</h3>
                 <p>Alcatra beef jowl flank. Spare ribs tail pork loin tri-tip chislic tongue. Shank jerky t-bone, pig pork chop burgdoggen
                 porchetta kielbasa biltong alcatra rump turkey ham hock chislic.</p>
-                <form action="POST">
+                <form action="POST" class="commentForm">
                     <!-- NOTE Are any of these fields required? -->
                     <label for="name" class="srOnly">Name</label>
                     <input type="text" name="name" id="name" placeholder="Name">
@@ -65,8 +65,7 @@
                     <input type="email" name="email" id="email" placeholder="Email address">
                     
                     <label for="comment" class="srOnly">Message</label>
-                    <!-- TODO change cols and rows -->
-                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                    <textarea name="comment" id="comment" placeholder="Comment"></textarea>
                     
                     <button type="submit">Post Comment</button>
                 </form>

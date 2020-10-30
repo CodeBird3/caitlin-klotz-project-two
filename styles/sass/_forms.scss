@@ -1,0 +1,66 @@
+// blog page form: .commentForm
+// contact page form: .contactForm
+
+
+// input type="text"
+// input type="email"
+// textarea
+// button type="submit"
+
+.commentForm,
+.contactFormContainer {
+    width: 70%;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+form input {
+    width: calc(50% - 40px);
+    border: none;
+    border-bottom: 2px solid $sunflowerYellow;
+}
+
+form input,
+textarea {
+    background: rgba($color: $white, $alpha: 0);
+    padding: 20px;
+}
+
+form input,
+textarea,
+button[type=submit] {
+    margin: 20px;
+}
+
+textarea {
+    height: 220px;
+}
+
+button[type=submit] {
+    display: block;
+    background: $sunflowerYellow;
+    // padding: 10px;
+}
+
+textarea,
+button[type=submit] {
+    width: 100%;
+    border: 2px solid $sunflowerYellow;
+}
+
+.contactFormContainer {
+    position: relative;
+}
+
+.contactForm {
+    background: $almostBlack;
+    box-shadow: 20px 20px $sunflowerYellow;
+    width: 100%;
+    position: absolute;
+    // REVIEW after positioning of .contactInfo is done
+    bottom: 0;
+}

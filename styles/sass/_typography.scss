@@ -22,7 +22,8 @@ body {
 }
 
 h1, h2,
-.readMore {
+.readMore,
+button[type=submit] {
     text-transform: uppercase;
 }
 
@@ -78,4 +79,30 @@ aside h2 {
     color: $sunflowerYellow;
     line-height: 58px; // TODO determine ratio
     letter-spacing: 0.8px; // TODO determine ratio?
+}
+
+// forms
+button[type=submit] {
+    font-family: $mainFont;
+    font-size: 2.24rem;
+    text-align: center; // REVIEW
+    text-decoration: none;
+    line-height: 41.6px;
+}
+
+.commentForm button[type=submit] {
+    color: $pine;
+}
+
+.contactForm button[type=submit] {
+    color: $almostBlack;
+}
+
+::placeholder {
+    color: $white;
+    font-family: $bodyFont;
+    font-size: 2rem;
+    letter-spacing: 1px; // TODO determine ratio?
+    // to make the font color appear white on Firefox:
+    opacity: 1;
 }

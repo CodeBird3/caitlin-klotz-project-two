@@ -18,50 +18,55 @@
 <body>
     
     <header class="contactPage">
-        <nav class="navBar">
-            <li><a href="index.html">Home</a></li>
-            <!-- REVIEW get to a certain section on home page -->
-            <li><a href="#about">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <!-- REVIEW better to use #? -->
-            <li><a href="contact.html">Contact</a></li>
-        </nav>
-        <h1>Get in Touch</h1>
+        <div class="wrapper">
+            <nav class="navBar">
+                <li><a href="index.html">Home</a></li>
+                <!-- REVIEW get to a certain section on home page -->
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <!-- REVIEW better to use #? -->
+                <li><a href="contact.html">Contact</a></li>
+            </nav>
+            <h1>Get in Touch</h1>
+        </div>
     </header>
 
     <main>
-        <section class="contactInfo">
-            <!-- Font Awesome Social Media Icons -->
-            <div class="socialMedia">
-                <!-- facebook -->
-                <i class="fab fa-facebook-f facebook"></i>
-                <!-- instagram -->
-                <i class="fab fa-instagram instagram"></i>
-                <!-- twitter -->
-                <i class="fab fa-twitter twitter"></i>
-                <!-- whatsapp -->
-                <i class="fab fa-whatsapp"></i>
+        <div class="contactBody wrapper">
+            <section class="contactInfo">
+                <!-- Font Awesome Social Media Icons -->
+                <div class="socialMedia">
+                    <!-- facebook -->
+                    <i class="fab fa-facebook-f facebook"></i>
+                    <!-- instagram -->
+                    <i class="fab fa-instagram instagram"></i>
+                    <!-- twitter -->
+                    <i class="fab fa-twitter twitter"></i>
+                    <!-- whatsapp -->
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <p>info@email.com</p>
+                <p>123-456-7890</p>
+                <p>123 Queen Street West, Unit 10</p>
+                <p>Toronto, Ontario</p>
+                <p>M5V2D5</p>
+            </section>
+            <div class="contactFormContainer">
+                <form action="POST" class="contactForm">
+                    <!-- NOTE Are any of these fields required? -->
+                    <label for="name" class="srOnly">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name">
+        
+                    <label for="email" class="srOnly">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="Email address">
+        
+                    <label for="message" class="srOnly">Message</label>
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+        
+                    <button type="submit">Submit</button>
+                </form>
             </div>
-            <p>info@email.com</p>
-            <p>123-456-7890</p>
-            <p>123 Queen Street West, Unit 10</p>
-            <p>Toronto, Ontario</p>
-            <p>M5V2D5</p>
-        </section>
-        <form action="POST">
-            <!-- NOTE Are any of these fields required? -->
-            <label for="name" class="srOnly">Name</label>
-            <input type="text" name="name" id="name" placeholder="Name">
-
-            <label for="email" class="srOnly">Email Address</label>
-            <input type="email" name="email" id="email" placeholder="Email address">
-
-            <label for="message" class="srOnly">Message</label>
-            <!-- TODO change cols and rows -->
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
+        </div>
     </main>
 
     <footer>Copyright <i class="far fa-copyright"></i> 2019 <a href="https://junocollege.com/">Juno College</a></footer>
