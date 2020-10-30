@@ -1,11 +1,8 @@
-// blog page form: .commentForm
-// contact page form: .contactForm
-
-
-// input type="text"
-// input type="email"
-// textarea
-// button type="submit"
+// TODO .contactForm might be a little too wide -> check .commentForm width too
+// TODO re-position .contactInfo text
+// TODO re-position contact page h1
+// REVIEW go though SASS files and NEST things!
+// REVIEW main content image for blog -> figure height, come back into the container
 
 .commentForm,
 .contactFormContainer {

@@ -1,0 +1,56 @@
+// position aside to the left of the main content
+.blogPageFlex {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+// SECTION aside
+.blogAside {
+    padding-top: 80px;
+    border: 3px solid peachpuff;
+}
+
+.blogAside figure {
+    width: 80%;
+    position: relative;
+
+    img {
+        position: absolute;
+    }
+}
+
+.blogAsideText {
+    background: $almostBlack;
+    width: 75%;
+    padding-top: 400px;
+    margin-top: 20px;
+
+    section {
+        padding: 30px;
+
+        ul {
+            margin-left: 20px;
+        }
+    }
+}
+// !SECTION aside
+
+// SECTION main content
+.blogSittingArea {
+    height: 400px;
+    position: relative;
+
+    img {
+        width: calc(100% - 20px);
+        box-shadow: -20px 20px $sunflowerYellow;
+        position: absolute;
+        top: -150px;
+        right: 0;
+    }
+}
+
+.employment {
+    border-left: 3px solid $sunflowerYellow;
+    border-bottom: 3px solid $sunflowerYellow;
+}
+// !SECTION main content

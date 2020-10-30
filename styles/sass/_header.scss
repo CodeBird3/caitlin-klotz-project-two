@@ -5,18 +5,18 @@ $imagePath: "../assets";
 // background banners
 header {
     // TODO make sure size works on all three pages
-    height: 86vh;
+    height: 75vh;
 }
     // home page
-.homePage {
+.homeHeader {
     background-image: url(#{$imagePath}/home-header.jpg);
 }
     // blog page
-.blogPage {
+.blogHeader {
     background-image: url(#{$imagePath}/blog-header.jpg);
 }
     // contact page
-.contactPage {
+.contactHeader {
     background-image: url(#{$imagePath}/contact-header.jpg);
 }
 
@@ -26,6 +26,7 @@ header {
 .navBar {
     display: flex;
     list-style: none;
+    padding-top: 20px;
     
     a {
         text-decoration: none;

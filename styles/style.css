@@ -321,7 +321,8 @@ h3 {
 .contest h2,
 .nature h2,
 .employment h2,
-.comments h3 {
+.comments h3,
+.socialMedia {
   color: #ffd300;
 }
 
@@ -331,6 +332,18 @@ aside h2 {
   color: #ffd300;
   line-height: 58px;
   letter-spacing: 0.8px;
+}
+
+.socialMedia {
+  font-size: 25px;
+  width: 155px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 button[type=submit] {
@@ -382,18 +395,18 @@ button[type=submit] {
 }
 
 header {
-  height: 86vh;
+  height: 75vh;
 }
 
-.homePage {
+.homeHeader {
   background-image: url(../assets/home-header.jpg);
 }
 
-.blogPage {
+.blogHeader {
   background-image: url(../assets/blog-header.jpg);
 }
 
-.contactPage {
+.contactHeader {
   background-image: url(../assets/contact-header.jpg);
 }
 
@@ -402,6 +415,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  padding-top: 20px;
 }
 
 .navBar a {
@@ -652,6 +666,68 @@ header {
 
 .contactInfo {
   width: 30%;
+}
+
+.mailingAddress {
+  margin-top: 30px;
+}
+
+.blogPageFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.blogAside {
+  padding-top: 80px;
+  border: 3px solid peachpuff;
+}
+
+.blogAside figure {
+  width: 80%;
+  position: relative;
+}
+
+.blogAside figure img {
+  position: absolute;
+}
+
+.blogAsideText {
+  background: #171b0e;
+  width: 75%;
+  padding-top: 400px;
+  margin-top: 20px;
+}
+
+.blogAsideText section {
+  padding: 30px;
+}
+
+.blogAsideText section ul {
+  margin-left: 20px;
+}
+
+.blogSittingArea {
+  height: 400px;
+  position: relative;
+}
+
+.blogSittingArea img {
+  width: calc(100% - 20px);
+  -webkit-box-shadow: -20px 20px #ffd300;
+          box-shadow: -20px 20px #ffd300;
+  position: absolute;
+  top: -150px;
+  right: 0;
+}
+
+.employment {
+  border-left: 3px solid #ffd300;
+  border-bottom: 3px solid #ffd300;
 }
 
 .commentForm,

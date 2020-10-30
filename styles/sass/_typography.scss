@@ -69,7 +69,8 @@ h3 {
 .contest h2,
 .nature h2,
 .employment h2,
-.comments h3 {
+.comments h3,
+.socialMedia {
     color: $sunflowerYellow;
 }
 
@@ -79,6 +80,14 @@ aside h2 {
     color: $sunflowerYellow;
     line-height: 58px; // TODO determine ratio
     letter-spacing: 0.8px; // TODO determine ratio?
+}
+
+.socialMedia {
+    font-size: 25px;
+    width: 155px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
 // forms
