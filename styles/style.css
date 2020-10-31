@@ -245,7 +245,7 @@ img {
 }
 
 .wrapper {
-  width: 90%;
+  width: 85%;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -399,15 +399,15 @@ header {
 }
 
 .homeHeader {
-  background-image: url(../assets/home-header.jpg);
+  background-image: url(../assets/homeHeader.jpg);
 }
 
 .blogHeader {
-  background-image: url(../assets/blog-header.jpg);
+  background-image: url(../assets/blogHeader.jpg);
 }
 
 .contactHeader {
-  background-image: url(../assets/contact-header.jpg);
+  background-image: url(../assets/contactHeader.jpg);
 }
 
 .navBar {
@@ -422,6 +422,20 @@ header {
   text-decoration: none;
   padding: 15px 30px;
   color: inherit;
+}
+
+.navBar a:hover,
+.navBar a:focus {
+  border-bottom: 2px solid #ffd300;
+}
+
+h1 {
+  width: 40vw;
+}
+
+.blogHeader h1,
+.contactHeader h1 {
+  padding-top: 40px;
 }
 
 .about .heading {
@@ -661,11 +675,12 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 100px 0;
+  padding: 100px 0 200px;
 }
 
 .contactInfo {
-  width: 30%;
+  width: 35%;
+  padding-left: 40px;
 }
 
 .mailingAddress {
@@ -771,9 +786,8 @@ header {
   padding-bottom: 15px;
 }
 
-.commentForm,
 .contactFormContainer {
-  width: 70%;
+  width: 65%;
 }
 
 form {

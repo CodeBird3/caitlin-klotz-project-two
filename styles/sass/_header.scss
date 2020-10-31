@@ -9,15 +9,15 @@ header {
 }
     // home page
 .homeHeader {
-    background-image: url(#{$imagePath}/home-header.jpg);
+    background-image: url(#{$imagePath}/homeHeader.jpg);
 }
     // blog page
 .blogHeader {
-    background-image: url(#{$imagePath}/blog-header.jpg);
+    background-image: url(#{$imagePath}/blogHeader.jpg);
 }
     // contact page
 .contactHeader {
-    background-image: url(#{$imagePath}/contact-header.jpg);
+    background-image: url(#{$imagePath}/contactHeader.jpg);
 }
 
 
@@ -33,4 +33,19 @@ header {
         padding: 15px 30px;
         color: inherit;
     }
+
+    a:hover,
+    a:focus {
+        border-bottom: 2px solid $sunflowerYellow;
+    }
+}
+
+// heading styles
+h1 {
+    width: 40vw;
+}
+
+.blogHeader h1,
+.contactHeader h1 {
+    padding-top: 40px;
 }

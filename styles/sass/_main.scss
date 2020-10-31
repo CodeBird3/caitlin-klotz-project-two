@@ -228,16 +228,15 @@
 }
 // !SECTION gallery section on home page
 
-
-
 // SECTION contact page
 .contactBody {
     display: flex;
-    padding: 100px 0;
+    padding: 100px 0 200px;
 }
 
 .contactInfo {
-    width: 30%;
+    width: 35%;
+    padding-left: 40px;
 }
 
 .mailingAddress {
