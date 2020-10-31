@@ -19,68 +19,68 @@
 }
 
 // SECTION about section on home page
-.about .heading {
-    position: relative;
-    padding-left: 70px;
-}
-
-.about .heading::after {
-    @include iconBackground();
-}
-
-.heading.location::before {
-    // map-marker-alt icon
-    content: "\f3c5";
-    @include iconStyles();
-    left: 16px;
-}
-
-.heading.community::before {
-    // users icon
-    content: "\f0c0";
-    @include iconStyles();
-    left: 9.5px;
-}
-
-.heading.blog::before {
-    // file icon
-    content: "\f15b";
-    @include iconStyles();
-    left: 16px;
-}
-
-.heading.phone::before {
-    // phone icon
-    content: "\f095";
-    @include iconStyles();
-    left: 12px;
-}
-
-// about section on home page
 .about {
     padding: 200px 0 150px;
     position: relative;
+
+    figure {
+        width: 50vw;
+        position: absolute;
+        right: 0;
+        bottom: 600px;
+    }
+
+    .heading {
+        position: relative;
+        padding-left: 70px;
+    
+        &::after {
+            @include iconBackground();
+        }
+    
+        &.location::before {
+            // map-marker-alt icon
+            content: "\f3c5";
+            @include iconStyles();
+            left: 16px;
+        }
+        
+        &.community::before {
+            // users icon
+            content: "\f0c0";
+            @include iconStyles();
+            left: 9.5px;
+        }
+        
+        &.blog::before {
+            // file icon
+            content: "\f15b";
+            @include iconStyles();
+            left: 16px;
+        }
+        
+        &.phone::before {
+            // phone icon
+            content: "\f095";
+            @include iconStyles();
+            left: 12px;
+        }
+    }
+
 }
 
 .aboutFlex {
     display: flex;
     flex-wrap: wrap;
-}
 
-.about figure {
-    width: 50vw;
-    position: absolute;
-    right: 0;
-    bottom: 600px;
-}
+    section {
+        width: 50%;
 
-.aboutFlex section {
-    width: 50%;
-}
-
-.aboutFlex section p {
-    padding-left: 72px;
-    padding-right: 20px;
+        p {
+            padding-left: 72px;
+            padding-right: 20px;
+        }
+    }
 }
 // !SECTION about section on home page
 
@@ -90,15 +90,14 @@
     flex-wrap: wrap;
     background: $almostBlack;
     padding-bottom: 35px;
-}
 
-.blogSection .textCard,
-.blogSection figure {
-    width: calc(50% - 20px);
-}
+    .textCard, figure {
+        width: calc(50% - 20px);
+    }
 
-.blogSection figure {
-    position: relative;
+    figure {
+        position: relative;
+    }
 }
 
 .homePageBurger, .card3 {
@@ -129,30 +128,34 @@
 
 .textCard {
     padding-top: 62px;
+
+    p {
+        padding: 20px 10%;
+    }
 }
 
-.textCard p {
-    padding: 20px 10%;
-}
 
 .card3 {
     text-align: right;
+
+    h2 {
+        padding-right: 10%;
+    }
+    
+    a {
+        margin-right: 10%;
+    }
 }
 
-.card3 h2 {
-    padding-right: 10%;
-}
+.card2 {
 
-.card3 a {
-    margin-right: 10%;
-}
-
-.card2 h2 {
-    padding-left: 10%;
-}
-
-.card2 a {
-    margin-left: 10%;
+    h2 {
+        padding-left: 10%;
+    }
+    
+    a {
+        margin-left: 10%;
+    }
 }
 
 .readMore {
@@ -168,10 +171,10 @@
 .contest {
     padding: 100px 0;
     text-align: center;
-}
 
-.contest p {
-    padding: 0 60px;
+    p {
+        padding: 0 60px;
+    }
 }
 
 .findOutMore {
@@ -194,13 +197,13 @@
     width: calc(35% - 90px);
     margin: 25px 45px;
     position: relative;
-}
 
-.natureImage img {
-    width: 90%;
-    box-shadow: -20px 20px $sunflowerYellow;
-    position: absolute;
-    right: 0;
+    img {
+        width: 90%;
+        box-shadow: -20px 20px $sunflowerYellow;
+        position: absolute;
+        right: 0;
+    }
 }
 
 .natureText {
@@ -213,18 +216,19 @@
 .gallery {
     background: $almostBlack;
     padding: 80px 0;
+
+    figure {
+        width: calc((100%/3) - 30px);
+        margin: 0 15px;
+    }
+    
+    figure:last-of-type {
+        margin-right: 0;
+    }
 }
 
 .galleryImages {
     display: flex;
-}
-.gallery figure {
-    width: calc((100%/3) - 30px);
-    margin: 0 15px;
-}
-
-.gallery figure:last-of-type {
-    margin-right: 0;
 }
 // !SECTION gallery section on home page
 

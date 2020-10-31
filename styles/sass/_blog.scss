@@ -8,14 +8,14 @@
 .blogAside {
     width: 40vw;
     padding-top: 80px;
-}
 
-.blogAside figure {
-    width: 80%;
-    position: relative;
-
-    img {
-        position: absolute;
+    figure {
+        width: 80%;
+        position: relative;
+    
+        img {
+            position: absolute;
+        }
     }
 }
 
@@ -93,5 +93,4 @@
 .comment h3 {
     padding-bottom: 15px;
 }
-
 // !SECTION main content

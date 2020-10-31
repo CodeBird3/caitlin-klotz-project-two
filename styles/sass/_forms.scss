@@ -11,40 +11,38 @@
 form {
     display: flex;
     flex-wrap: wrap;
-}
 
-form input {
-    width: calc(50% - 40px);
-    border: none;
-    border-bottom: 2px solid $sunflowerYellow;
-}
+    input {
+        width: calc(50% - 40px);
+        border: none;
+        border-bottom: 2px solid $sunflowerYellow;
+    }
 
-form input,
-textarea {
-    background: rgba($color: $white, $alpha: 0);
-    padding: 20px;
-}
+    textarea {
+        height: 220px;
+    }
+    
+    button[type=submit] {
+        display: block;
+        background: $sunflowerYellow;
+    }
 
-form input,
-textarea,
-button[type=submit] {
-    margin: 20px;
-}
+    input, textarea {
+        background: rgba($color: $white, $alpha: 0);
+        padding: 20px;
+    }
 
-textarea {
-    height: 220px;
-}
+    textarea, button[type=submit] {
+        width: 100%;
+        border: 2px solid $sunflowerYellow;
+    }
 
-button[type=submit] {
-    display: block;
-    background: $sunflowerYellow;
-    // padding: 10px;
-}
+    input,
+    textarea,
+    button[type=submit] {
+        margin: 20px;
+    }
 
-textarea,
-button[type=submit] {
-    width: 100%;
-    border: 2px solid $sunflowerYellow;
 }
 
 .contactFormContainer {

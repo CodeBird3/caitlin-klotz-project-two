@@ -398,6 +398,10 @@ header {
   height: 75vh;
 }
 
+header h1 {
+  width: 40vw;
+}
+
 .homeHeader {
   background-image: url(../assets/homeHeader.jpg);
 }
@@ -408,6 +412,11 @@ header {
 
 .contactHeader {
   background-image: url(../assets/contactHeader.jpg);
+}
+
+.blogHeader h1,
+.contactHeader h1 {
+  padding-top: 40px;
 }
 
 .navBar {
@@ -429,13 +438,16 @@ header {
   border-bottom: 2px solid #ffd300;
 }
 
-h1 {
-  width: 40vw;
+.about {
+  padding: 200px 0 150px;
+  position: relative;
 }
 
-.blogHeader h1,
-.contactHeader h1 {
-  padding-top: 40px;
+.about figure {
+  width: 50vw;
+  position: absolute;
+  right: 0;
+  bottom: 600px;
 }
 
 .about .heading {
@@ -453,7 +465,7 @@ h1 {
   left: 0;
 }
 
-.heading.location::before {
+.about .heading.location::before {
   content: "\f3c5";
   font-family: "Font Awesome 5 Free";
   font-size: 25px;
@@ -464,7 +476,7 @@ h1 {
   left: 16px;
 }
 
-.heading.community::before {
+.about .heading.community::before {
   content: "\f0c0";
   font-family: "Font Awesome 5 Free";
   font-size: 25px;
@@ -475,7 +487,7 @@ h1 {
   left: 9.5px;
 }
 
-.heading.blog::before {
+.about .heading.blog::before {
   content: "\f15b";
   font-family: "Font Awesome 5 Free";
   font-size: 25px;
@@ -486,7 +498,7 @@ h1 {
   left: 16px;
 }
 
-.heading.phone::before {
+.about .heading.phone::before {
   content: "\f095";
   font-family: "Font Awesome 5 Free";
   font-size: 25px;
@@ -497,24 +509,12 @@ h1 {
   left: 12px;
 }
 
-.about {
-  padding: 200px 0 150px;
-  position: relative;
-}
-
 .aboutFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.about figure {
-  width: 50vw;
-  position: absolute;
-  right: 0;
-  bottom: 600px;
 }
 
 .aboutFlex section {
@@ -536,8 +536,7 @@ h1 {
   padding-bottom: 35px;
 }
 
-.blogSection .textCard,
-.blogSection figure {
+.blogSection .textCard, .blogSection figure {
   width: calc(50% - 20px);
 }
 
@@ -656,12 +655,6 @@ h1 {
   padding: 80px 0;
 }
 
-.galleryImages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .gallery figure {
   width: calc((100%/3) - 30px);
   margin: 0 15px;
@@ -669,6 +662,12 @@ h1 {
 
 .gallery figure:last-of-type {
   margin-right: 0;
+}
+
+.galleryImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .contactBody {
@@ -804,31 +803,29 @@ form input {
   border-bottom: 2px solid #ffd300;
 }
 
-form input,
-textarea {
-  background: rgba(255, 255, 255, 0);
-  padding: 20px;
-}
-
-form input,
-textarea,
-button[type=submit] {
-  margin: 20px;
-}
-
-textarea {
+form textarea {
   height: 220px;
 }
 
-button[type=submit] {
+form button[type=submit] {
   display: block;
   background: #ffd300;
 }
 
-textarea,
-button[type=submit] {
+form input, form textarea {
+  background: rgba(255, 255, 255, 0);
+  padding: 20px;
+}
+
+form textarea, form button[type=submit] {
   width: 100%;
   border: 2px solid #ffd300;
+}
+
+form input,
+form textarea,
+form button[type=submit] {
+  margin: 20px;
 }
 
 .contactFormContainer {

@@ -4,8 +4,11 @@ $imagePath: "../assets";
 
 // background banners
 header {
-    // TODO make sure size works on all three pages
     height: 75vh;
+
+    h1 {
+        width: 40vw;
+    }
 }
     // home page
 .homeHeader {
@@ -20,9 +23,12 @@ header {
     background-image: url(#{$imagePath}/contactHeader.jpg);
 }
 
+.blogHeader h1,
+.contactHeader h1 {
+    padding-top: 40px;
+}
 
 // navigation styles
-    // NOTE does the current page stay highlighted in the navBar?
 .navBar {
     display: flex;
     list-style: none;
@@ -38,14 +44,4 @@ header {
     a:focus {
         border-bottom: 2px solid $sunflowerYellow;
     }
-}
-
-// heading styles
-h1 {
-    width: 40vw;
-}
-
-.blogHeader h1,
-.contactHeader h1 {
-    padding-top: 40px;
 }
