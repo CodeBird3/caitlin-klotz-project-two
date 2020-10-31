@@ -12,4 +12,17 @@
 footer {
     background: $black;
     text-align: center;
+
+    a:hover, a:focus {
+        color: $sunflowerYellow;
+    }
 }
+
+// media queries
+@import 'mediaQueries';
+
+/* REVIEW
+    MAYBE USE TRANSITIONS ON THINGS THAT CHANGE?
+        - navBar
+        - sliding menu
+*/

@@ -346,6 +346,18 @@ aside h2 {
           justify-content: space-between;
 }
 
+form input, textarea {
+  color: #ffffff;
+  font-family: "Barlow", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+form input:focus, textarea:focus {
+  color: #171b0e;
+  background: #ffffff;
+}
+
 button[type=submit] {
   font-family: "Josefin Sans", sans-serif;
   font-size: 2.24rem;
@@ -602,8 +614,15 @@ header h1 {
   display: inline-block;
   color: #171b0e;
   background: #ffd300;
+  border: 2px solid #171b0e;
   padding: 5px 7px 0;
   margin: 20px 0;
+}
+
+.readMore:hover, .readMore:focus {
+  color: #ffffff;
+  background: #2b331b;
+  border: 2px solid #ffffff;
 }
 
 .contest {
@@ -620,8 +639,15 @@ header h1 {
   color: #ffffff;
   text-transform: uppercase;
   background: #0f0f0f;
+  border: 2px solid #2b331b;
   margin-top: 40px;
   padding: 5px 20px 0;
+}
+
+.findOutMore:hover, .findOutMore:focus {
+  color: #171b0e;
+  background: #ffd300;
+  border: 2px solid #171b0e;
 }
 
 .natureFlex {
@@ -812,6 +838,12 @@ form button[type=submit] {
   background: #ffd300;
 }
 
+form button[type=submit]:hover, form button[type=submit]:focus {
+  color: #ffffff;
+  background: #171b0e;
+  border: 2px solid #ffffff;
+}
+
 form input, form textarea {
   background: rgba(255, 255, 255, 0);
   padding: 20px;
@@ -842,6 +874,10 @@ form button[type=submit] {
   bottom: 0;
 }
 
+.contactForm button[type=submit]:hover, .contactForm button[type=submit]:focus {
+  background: #2b331b;
+}
+
 .commentForm {
   width: 100%;
   padding-bottom: 50px;
@@ -851,3 +887,61 @@ footer {
   background: #0f0f0f;
   text-align: center;
 }
+
+footer a:hover, footer a:focus {
+  color: #ffd300;
+}
+
+/* TODO
+            - decrease font-size?
+            - increase width that h1 takes up?
+            - navBar becomes hamburger menu
+                - sliding menu
+        */
+/* REVIEW
+            - .homePageBurger and .homePageGazpacho image escapes $almostBlack container when screen size decreases
+        */
+/* TODO
+            - will never break; just change font-size
+        */
+/* TODO
+            - pick a vertical layout
+            - font sizes to change
+            - centre text and anchor
+        */
+/* TODO
+            - pick a media query to switch to vertical layout
+        */
+/* TODO
+            - width: 100% when aside becomes a slide out
+        */
+/* TODO
+                - main content image for blog -> figure height, come back into the container
+            */
+/* TODO
+                - no side border when aside becomes a slide out
+            */
+/* TODO
+                - name input over email input on mobile view
+            */
+/* REVIEW does it make sense to make the aside a slide out?
+            - "more info" button at the end of "Employment Opportunities"
+        */
+/* TODO contact body
+        - flex-direction: column;
+            - width of both containers should become 100%
+    */
+/* TODO contact body
+            - split contact info into two sections above the contact form
+                - social media and email
+                - phone number and mailing address
+        */
+/* TODO
+            - when flex-direction changes, form position should no longer be absolute
+            - name input over email input on mobile view
+        */
+/* REVIEW
+    MAYBE USE TRANSITIONS ON THINGS THAT CHANGE?
+        - navBar
+        - sliding menu
+*/

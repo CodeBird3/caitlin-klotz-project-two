@@ -1,9 +1,3 @@
-// TODO .contactForm might be a little too wide -> check .commentForm width too
-// TODO re-position .contactInfo text
-// TODO re-position contact page h1
-// REVIEW go though SASS files and NEST things!
-// REVIEW main content image for blog -> figure height, come back into the container
-
 .contactFormContainer {
     width: 65%;
 }
@@ -25,6 +19,12 @@ form {
     button[type=submit] {
         display: block;
         background: $sunflowerYellow;
+
+        &:hover, &:focus {
+            color: $white;
+            background: $almostBlack;
+            border: 2px solid $white;
+        }
     }
 
     input, textarea {
@@ -57,6 +57,13 @@ form {
     position: absolute;
     // REVIEW after positioning of .contactInfo is done
     bottom: 0;
+
+    button[type=submit] {
+
+        &:hover, &:focus {
+            background: $pine;
+        }
+    }
 }
 
 .commentForm {

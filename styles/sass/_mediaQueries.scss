@@ -1,0 +1,89 @@
+// SECTION header
+        /* TODO
+            - decrease font-size?
+            - increase width that h1 takes up?
+            - navBar becomes hamburger menu
+                - sliding menu
+        */
+// !SECTION header
+
+// SECTION home page
+    // SECTION about
+
+    // !SECTION about
+    // SECTION blog
+        /* REVIEW
+            - .homePageBurger and .homePageGazpacho image escapes $almostBlack container when screen size decreases
+        */
+    // !SECTION blog
+    // SECTION contest
+        /* TODO
+            - will never break; just change font-size
+        */
+    // !SECTION contest
+    // SECTION nature
+        /* TODO
+            - pick a vertical layout
+            - font sizes to change
+            - centre text and anchor
+        */
+    // !SECTION nature
+    // SECTION gallery
+        /* TODO
+            - pick a media query to switch to vertical layout
+        */
+    // !SECTION about
+// !SECTION home page
+
+// SECTION blog page
+    // SECTION main content
+        /* TODO
+            - width: 100% when aside becomes a slide out
+        */
+
+        // SECTION figure
+            /* TODO
+                - main content image for blog -> figure height, come back into the container
+            */
+        // !SECTION figure
+        // SECTION employment
+            /* TODO
+                - no side border when aside becomes a slide out
+            */
+        // !SECTION employment
+        // SECTION comments
+
+        // !SECTION comments
+        // SECTION comment form
+            /* TODO
+                - name input over email input on mobile view
+            */
+        // !SECTION comment form
+    // !SECTION main content
+    // SECTION aside
+        /* REVIEW does it make sense to make the aside a slide out?
+            - "more info" button at the end of "Employment Opportunities"
+        */
+    // !SECTION aside
+// !SECTION blog page
+
+// SECTION contact page
+    /* TODO contact body
+        - flex-direction: column;
+            - width of both containers should become 100%
+    */
+
+    // SECTION contact info
+        /* TODO contact body
+            - split contact info into two sections above the contact form
+                - social media and email
+                - phone number and mailing address
+        */
+    // !SECTION contact info
+    // SECTION contact form
+        /* TODO
+            - when flex-direction changes, form position should no longer be absolute
+            - name input over email input on mobile view
+        */
+    // !SECTION contact form
+// !SECTION contact page
