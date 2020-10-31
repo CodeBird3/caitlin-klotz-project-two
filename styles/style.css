@@ -673,7 +673,7 @@ header h1 {
 
 .natureText {
   width: 65%;
-  padding-left: 60px;
+  padding-left: 55px;
 }
 
 .gallery {
@@ -706,6 +706,7 @@ header h1 {
 .contactInfo {
   width: 35%;
   padding-left: 40px;
+  padding-right: 15px;
 }
 
 .mailingAddress {
@@ -893,43 +894,94 @@ footer a:hover, footer a:focus {
 }
 
 /* TODO
-            - decrease font-size?
-            - increase width that h1 takes up?
-            - navBar becomes hamburger menu
-                - sliding menu
+        - decrease font-size?
+        - increase width that h1 takes up?
+        - navBar becomes hamburger menu
+            - sliding menu
+            - tablet layout (1000px)
+    */
+/* REVIEW
+            - 496px
+                - "Restaurant" starts to hide
         */
 /* REVIEW
+            - 599px
+                - becomes 3 lines
+        */
+/* TODO
+            - switch to vertical layout, one container on top of the other
+        */
+/* REVIEW
+            - 1183px
+                - set image to centre of section
+        */
+/* TODO
             - .homePageBurger and .homePageGazpacho image escapes $almostBlack container when screen size decreases
+            - switch to vertical layout
+                - either:
+                    - change order of last image/text card pair
+                    - have both text cards in the middle
+                        - keep text-alignment the same
+                        - move images to the opposite side of the anchors
+        */
+/* REVIEW
+            - 1183px
+                - switch to vertical layout
         */
 /* TODO
             - will never break; just change font-size
         */
+/* REVIEW
+            - 598px
+                - h2: 2.4rem
+                - p: 1.6rem, p0
+                - a: 1.8rem
+        */
 /* TODO
             - pick a vertical layout
+                - have square image overlap banner?
             - font sizes to change
             - centre text and anchor
         */
+/* REVIEW
+            - 1317px
+                - h2: 4rem
+            - 1183px
+                - h2 breaks
+                - decrease p and anchor font sizes
+                - OR
+                    - switch to vertical layout
+        */
 /* TODO
             - pick a media query to switch to vertical layout
+                - 1000px
         */
 /* TODO
             - width: 100% when aside becomes a slide out
         */
-/* TODO
-                - main content image for blog -> figure height, come back into the container
+/* REVIEW
+                - image position when main content has 100vw
             */
 /* TODO
                 - no side border when aside becomes a slide out
+            */
+/* REVIEW
+                - font-sizes when main content has 100vw
             */
 /* TODO
                 - name input over email input on mobile view
             */
 /* REVIEW does it make sense to make the aside a slide out?
             - "more info" button at the end of "Employment Opportunities"
+            - maybe 1000px
         */
 /* TODO contact body
         - flex-direction: column;
             - width of both containers should become 100%
+    */
+/* REVIEW
+        - 1000px
+            - change flex-direction
     */
 /* TODO contact body
             - split contact info into two sections above the contact form
@@ -940,6 +992,46 @@ footer a:hover, footer a:focus {
             - when flex-direction changes, form position should no longer be absolute
             - name input over email input on mobile view
         */
+/* MEDIA QUERY VALUES
+    - 1183px
+        - home page nature section
+        - home page about section
+        - home page blog section
+
+    - 1000px
+        - contact page
+        - navbar to sliding menu
+        - home page gallery
+        - blog page aside / blog page main content
+        
+    - 600px
+        - contact page header
+        - home page contest section
+        - home page header
+*/
+@media (max-width: 1317px) {
+  .about {
+    padding-top: 225px;
+  }
+  .about figure {
+    bottom: 625px;
+  }
+  .textCard h2 {
+    font-size: 3rem;
+  }
+  .textCard p {
+    font-size: 1.6rem;
+    padding: 10px 10%;
+  }
+  .textCard a {
+    font-size: 2rem;
+    margin: 10px 10%;
+  }
+  .natureText h2 {
+    font-size: 4rem;
+  }
+}
+
 /* REVIEW
     MAYBE USE TRANSITIONS ON THINGS THAT CHANGE?
         - navBar
