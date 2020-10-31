@@ -654,6 +654,8 @@ header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 100px 0;
 }
 
@@ -694,6 +696,8 @@ header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contactBody {
@@ -905,56 +909,31 @@ footer a:hover, footer a:focus {
                 - "Restaurant" starts to hide
         */
 /* REVIEW
-            - 599px
+            - 600px
                 - becomes 3 lines
         */
-/* TODO
-            - switch to vertical layout, one container on top of the other
-        */
 /* REVIEW
-            - 1183px
-                - set image to centre of section
-        */
-/* TODO
-            - .homePageBurger and .homePageGazpacho image escapes $almostBlack container when screen size decreases
-            - switch to vertical layout
-                - either:
-                    - change order of last image/text card pair
-                    - have both text cards in the middle
-                        - keep text-alignment the same
-                        - move images to the opposite side of the anchors
-        */
-/* REVIEW
-            - 1183px
-                - switch to vertical layout
-        */
-/* TODO
-            - will never break; just change font-size
-        */
-/* REVIEW
-            - 598px
-                - h2: 2.4rem
+            - 600px
+                - h2: 2.7rem
                 - p: 1.6rem, p0
-                - a: 1.8rem
-        */
-/* TODO
-            - pick a vertical layout
-                - have square image overlap banner?
-            - font sizes to change
-            - centre text and anchor
+                - figure: 75vw?
         */
 /* REVIEW
-            - 1317px
-                - h2: 4rem
-            - 1183px
-                - h2 breaks
-                - decrease p and anchor font sizes
-                - OR
-                    - switch to vertical layout
+            - 600px
+                - text-align centre for text cards
+                - figures to 75vw?
         */
-/* TODO
-            - pick a media query to switch to vertical layout
-                - 1000px
+/* REVIEW
+            - 600px
+                - decrease top/bottom padding?
+        */
+/* REVIEW
+            - 600px
+                - decrease top/bottom padding?
+                - reposition squareImage
+                - either:
+                    - change font-size of h2
+                    - change line-height and centre h2
         */
 /* TODO
             - width: 100% when aside becomes a slide out
@@ -992,23 +971,6 @@ footer a:hover, footer a:focus {
             - when flex-direction changes, form position should no longer be absolute
             - name input over email input on mobile view
         */
-/* MEDIA QUERY VALUES
-    - 1183px
-        - home page nature section
-        - home page about section
-        - home page blog section
-
-    - 1000px
-        - contact page
-        - navbar to sliding menu
-        - home page gallery
-        - blog page aside / blog page main content
-        
-    - 600px
-        - contact page header
-        - home page contest section
-        - home page header
-*/
 @media (max-width: 1317px) {
   .about {
     padding-top: 225px;
@@ -1032,6 +994,94 @@ footer a:hover, footer a:focus {
   }
 }
 
+@media (max-width: 1183px) {
+  .about {
+    padding-top: 80px;
+  }
+  .about figure {
+    position: static;
+    margin: 30px auto 0;
+  }
+  .blogSection .textCard, .blogSection figure {
+    width: 100%;
+    margin: 0;
+  }
+  .blogSection figure {
+    height: calc(100vw/4);
+  }
+  .blogSection figure img {
+    width: 50%;
+  }
+  .blogSection .textCard {
+    padding: 0;
+  }
+  .blogSection .textCard p {
+    padding: 10px 0;
+  }
+  .blogSection .textCard a {
+    margin: 10px 0;
+  }
+  .blogSection .textCard.card2 {
+    text-align: right;
+  }
+  .blogSection .textCard.card3 {
+    text-align: left;
+  }
+  .natureImage {
+    width: 40%;
+    margin: 0;
+  }
+  .natureImage img {
+    width: 100%;
+    bottom: -150px;
+    left: 20px;
+  }
+  .natureText {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .natureText h2 {
+    text-align: right;
+    padding-left: 52%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .aboutFlex section {
+    width: 100%;
+  }
+  .contest h2, .nature h2 {
+    font-size: 2.4rem;
+  }
+  .contest p, .nature p {
+    font-size: 1.6rem;
+    padding: 0;
+  }
+  .findOutMore {
+    font-size: 1.8rem;
+  }
+  .natureImage img {
+    bottom: -10px;
+    border: 0.5px solid #ffd300;
+  }
+  .natureText h2 {
+    padding: 0;
+  }
+  .gallery figure {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+/* MEDIA QUERY VALUES
+    - 600px
+        - contact page header
+        - home page header
+        - home page blog section
+        - home page about section
+        - footer font size?
+*/
 /* REVIEW
     MAYBE USE TRANSITIONS ON THINGS THAT CHANGE?
         - navBar

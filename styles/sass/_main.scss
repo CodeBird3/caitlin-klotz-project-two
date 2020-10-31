@@ -131,7 +131,6 @@
     }
 }
 
-
 .card3 {
     text-align: right;
 
@@ -203,6 +202,7 @@
 // SECTION nature section on home page
 .natureFlex {
     display: flex;
+    flex-wrap: wrap;
     padding: 100px 0;
 }
 
@@ -242,6 +242,7 @@
 
 .galleryImages {
     display: flex;
+    flex-wrap: wrap;
 }
 // !SECTION gallery section on home page
 

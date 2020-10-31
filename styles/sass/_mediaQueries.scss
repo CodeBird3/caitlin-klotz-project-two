@@ -18,72 +18,47 @@
     // !SECTION blog page
     // SECTION contact page
         /* REVIEW
-            - 599px
+            - 600px
                 - becomes 3 lines
         */
     // !SECTION contact page
-
 // !SECTION header
 
 // SECTION home page
     // SECTION about
-        /* TODO
-            - switch to vertical layout, one container on top of the other
-        */
         /* REVIEW
-            - 1183px
-                - set image to centre of section
+            - 600px
+                - h2: 2.7rem
+                - p: 1.6rem, p0
+                - figure: 75vw?
         */
     // !SECTION about
     // SECTION blog
-        /* TODO
-            - .homePageBurger and .homePageGazpacho image escapes $almostBlack container when screen size decreases
-            - switch to vertical layout
-                - either:
-                    - change order of last image/text card pair
-                    - have both text cards in the middle
-                        - keep text-alignment the same
-                        - move images to the opposite side of the anchors
-        */
         /* REVIEW
-            - 1183px
-                - switch to vertical layout
+            - 600px
+                - text-align centre for text cards
+                - figures to 75vw?
         */
     // !SECTION blog
     // SECTION contest
-        /* TODO
-            - will never break; just change font-size
-        */
         /* REVIEW
-            - 598px
-                - h2: 2.4rem
-                - p: 1.6rem, p0
-                - a: 1.8rem
+            - 600px
+                - decrease top/bottom padding?
         */
     // !SECTION contest
     // SECTION nature
-        /* TODO
-            - pick a vertical layout
-                - have square image overlap banner?
-            - font sizes to change
-            - centre text and anchor
-        */
         /* REVIEW
-            - 1317px
-                - h2: 4rem
-            - 1183px
-                - h2 breaks
-                - decrease p and anchor font sizes
-                - OR
-                    - switch to vertical layout
+            - 600px
+                - decrease top/bottom padding?
+                - reposition squareImage
+                - either:
+                    - change font-size of h2
+                    - change line-height and centre h2
         */
     // !SECTION nature
     // SECTION gallery
-        /* TODO
-            - pick a media query to switch to vertical layout
-                - 1000px
-        */
-    // !SECTION about
+        // NOTE complete
+    // !SECTION gallery
 // !SECTION home page
 
 // SECTION blog page
@@ -147,25 +122,6 @@
     // !SECTION contact form
 // !SECTION contact page
 
-
-/* MEDIA QUERY VALUES
-    - 1183px
-        - home page nature section
-        - home page about section
-        - home page blog section
-
-    - 1000px
-        - contact page
-        - navbar to sliding menu
-        - home page gallery
-        - blog page aside / blog page main content
-        
-    - 600px
-        - contact page header
-        - home page contest section
-        - home page header
-*/
-
 @media (max-width: 1317px) {
     // SECTION home page
         // increase top padding for about section
@@ -203,3 +159,153 @@
     }
     // !SECTION home page
 }
+
+@media (max-width: 1183px) {
+    // SECTION home page
+        // set image to centre of about section, decrease about section padding
+    .about {
+        padding-top: 80px;
+
+        figure {
+            position: static;
+            margin: 30px auto 0;
+        }
+    }
+
+        // switch blog section to vertical layout
+    .blogSection {
+        
+        .textCard, figure {
+            width: 100%;
+            margin: 0;
+        }
+
+        figure {
+            height: calc(100vw/4);
+
+            img {
+                width: 50%;
+            }
+        }
+
+        .textCard {
+            padding: 0;
+
+            p {
+                padding: 10px 0;
+            }
+
+            a {
+                margin: 10px 0;
+            }
+
+            &.card2 {
+                text-align: right;
+            }
+
+            &.card3 {
+                text-align: left;
+            }
+        }
+    }
+
+        // switch nature section to vertical layout, overlap squareImage over banner
+    .natureImage {
+        width: 40%;
+        margin: 0;
+        
+        img {
+            width: 100%;
+            bottom: -150px;
+            left: 20px;
+        }
+    }
+
+    .natureText {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+
+        h2 {
+            text-align: right;
+            padding-left: 52%;
+        }
+    }
+    // !SECTION home page
+}
+    
+@media (max-width: 1000px) {
+    // SECTION navigation
+        // navbar to sliding menu
+    // !SECTION navigation
+    
+    // SECTION home page
+        // set width of text cards to 100% so they stack on top of each other in about section
+    .aboutFlex {
+        // REVIEW location of icons
+        section {
+            width: 100%;
+        }
+    }
+    
+        // decrease font sizes for h2, paragraph, and anchor in contest and nature sections
+    .contest, .nature {
+        
+        h2 {
+            font-size: 2.4rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            padding: 0;
+        }
+    }
+
+    .findOutMore {
+        font-size: 1.8rem;
+    }
+
+        // reposition squareImage in nature section
+    .natureImage {
+
+        img {
+            bottom: -10px;
+            // for better visibility:
+            border: 0.5px solid $sunflowerYellow;
+        }
+    }
+
+    .natureText {
+
+        h2 {
+            padding: 0;
+        }
+    }
+        
+        // stack images vertically in gallery section
+    .gallery {
+        figure {
+            width: 100%;
+            margin: 20px 0;
+        }
+    }
+    // !SECTION home page
+
+    // SECTION blog page
+        // blog page aside / blog page main content
+    // !SECTION blog page
+    
+    // SECTION contact page
+
+    // !SECTION contact page
+}
+
+
+/* MEDIA QUERY VALUES
+    - 600px
+        - contact page header
+        - home page header
+        - home page blog section
+        - home page about section
+        - footer font size?
+*/
