@@ -683,8 +683,8 @@ header {
 }
 
 .blogAside {
+  width: 40vw;
   padding-top: 80px;
-  border: 3px solid peachpuff;
 }
 
 .blogAside figure {
@@ -698,8 +698,8 @@ header {
 
 .blogAsideText {
   background: #171b0e;
-  width: 75%;
-  padding-top: 400px;
+  width: 70%;
+  padding-top: 29vw;
   margin-top: 20px;
 }
 
@@ -711,8 +711,12 @@ header {
   margin-left: 20px;
 }
 
+.blogPage {
+  width: 60vw;
+}
+
 .blogSittingArea {
-  height: 400px;
+  height: calc(60vw/2);
   position: relative;
 }
 
@@ -721,13 +725,50 @@ header {
   -webkit-box-shadow: -20px 20px #ffd300;
           box-shadow: -20px 20px #ffd300;
   position: absolute;
-  top: -150px;
   right: 0;
+  bottom: 0;
 }
 
 .employment {
   border-left: 3px solid #ffd300;
   border-bottom: 3px solid #ffd300;
+  padding: 50px 75px 100px;
+}
+
+.employment h3 {
+  padding-left: 4px;
+}
+
+.employment p {
+  padding: 15px 4px;
+}
+
+.comments {
+  padding: 50px 75px 0 60px;
+}
+
+.comments .commentFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 0;
+}
+
+.comments .commentFlex figure {
+  width: 20%;
+}
+
+.comments .commentFlex .comment {
+  margin-left: 15px;
+  width: calc(80% - 15px);
+}
+
+.commentFlex figure img {
+  width: 80%;
+}
+
+.comment h3 {
+  padding-bottom: 15px;
 }
 
 .commentForm,
@@ -741,7 +782,6 @@ form {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 40px;
 }
 
 form input {
@@ -786,8 +826,14 @@ button[type=submit] {
   -webkit-box-shadow: 20px 20px #ffd300;
           box-shadow: 20px 20px #ffd300;
   width: 100%;
+  padding: 40px;
   position: absolute;
   bottom: 0;
+}
+
+.commentForm {
+  width: 100%;
+  padding-bottom: 50px;
 }
 
 footer {

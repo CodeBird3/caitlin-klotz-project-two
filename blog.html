@@ -38,40 +38,48 @@
                 <img src="./assets/blog-post-image.jpg" alt="Image of sitting area">
             </figure>
             <!-- NOTE needs a border -->
-            <div class="wrapper">
-                <section class="employment">
-                    <h2 class="heading">Employment Opportunities</h2>
-                    <h3>Monday October 30, 2019 by Sulaire</h3>
-                    <p>Bacon ipsum dolor amet turkey pig swine, cow ham ground round chuck fatback. Andouille jerky beef shank landjaeger ham, fatback short ribs. Sausage pig ham filet mignon pork, chicken pork loin. Brisket flank chuck, corned beef buffalo ground round meatball cupim jerky tail burgdoggen. Venison capicola filet mignon, beef ribs kielbasa turducken picanha spare ribs cow shank turkey beef prosciutto. Spare ribs turkey pastrami tongue drumstick shank.</p>
-                    <p>Biltong tail bacon drumstick burgdoggen, tri-tip tenderloin jerky shank kielbasa meatball jowl prosciutto. Tri-tip turducken capicola shank pig. Picanha kevin swine flank. Andouille spare ribs corned beef, pork landjaeger bacon beef ribs chislic jerky ribeye kielbasa burgdoggen. Tail flank chicken t-bone beef hamburger.</p>
-                    <p>Rump picanha doner, ham hock ball tip burgdoggen kielbasa pastrami tri-tip pork chop pancetta short ribs. Filet mignon swine beef ribs pork loin, ball tip landjaeger chicken turkey shoulder andouille t-bone sirloin rump fatback pork. Ground round chuck pork t-bone, jerky ham kielbasa turkey pig hamburger. Short loin kielbasa kevin, buffalo ham jowl burgdoggen tenderloin frankfurter cow drumstick porchetta.</p>
-                    <p>Tail beef ribs leberkas pig, turducken andouille beef swine shankle. Tongue andouille porchetta doner landjaeger tenderloin. Alcatra tri-tip short loin ground round kevin pork chop shank hamburger jowl. Pork porchetta filet mignon ham hock ground round pancetta flank chuck beef landjaeger hamburger boudin. Pork biltong ham hock venison landjaeger alcatra, tenderloin shank short ribs chicken pancetta. Short ribs pig biltong ball tip. Sirloin shoulder frankfurter, shankle landjaeger doner strip steak swine ham hock hamburger shank corned beef.</p>
-                </section>
-                <section class="comments">
-                    <h2>Comments:</h2>
+            <section class="employment">
+                <h2 class="heading">Employment Opportunities</h2>
+                <h3>Monday October 30, 2019 by Sulaire</h3>
+                <p>Bacon ipsum dolor amet turkey pig swine, cow ham ground round chuck fatback. Andouille jerky beef shank landjaeger ham, fatback short ribs. Sausage pig ham filet mignon pork, chicken pork loin. Brisket flank chuck, corned beef buffalo ground round meatball cupim jerky tail burgdoggen.</p>
+                <p>Biltong tail bacon drumstick burgdoggen, tri-tip tenderloin jerky shank kielbasa meatball jowl prosciutto. Tri-tip turducken capicola shank pig. Picanha kevin swine flank. Andouille spare ribs corned beef, pork landjaeger bacon beef ribs chislic jerky ribeye kielbasa burgdoggen. Tail flank chicken t-bone beef hamburger.</p>
+                <p>Rump picanha doner, ham hock ball tip burgdoggen kielbasa pastrami tri-tip pork chop pancetta short ribs. Filet mignon swine beef ribs pork loin, ball tip landjaeger chicken turkey shoulder andouille t-bone sirloin rump fatback pork. Ground round chuck pork t-bone, jerky ham kielbasa turkey pig hamburger. Short loin kielbasa kevin, buffalo ham jowl burgdoggen tenderloin frankfurter cow drumstick porchetta.</p>
+                <p>Tail beef ribs leberkas pig, turducken andouille beef swine shankle. Tongue andouille porchetta doner landjaeger tenderloin. Alcatra tri-tip short loin ground round kevin pork chop shank hamburger jowl. Pork porchetta filet mignon ham hock ground round pancetta flank chuck beef landjaeger hamburger boudin.</p>
+            </section>
+            <section class="comments">
+                <h2 class="heading--small">Comments:</h2>
+                <div class="commentFlex">
                     <figure><img src="./assets/comment-1.jpg" alt="Ali's profile image"></figure>
-                    <h3>Tuesday October 9th, 2019 by Ali</h3>
-                    <p>Bacon ipsum dolor amet meatloaf pork chop andouille hamburger tenderloin doner burgdoggen leberkas fatback pancetta
-                    kielbasa venison. Shoulder ribeye sirloin turducken picanha pastrami...</p>
+                    <div class="comment">
+                        <h3>Tuesday October 9th, 2019 by Ali</h3>
+                        <p>Bacon ipsum dolor amet meatloaf pork chop andouille hamburger tenderloin doner burgdoggen leberkas fatback pancetta
+                        kielbasa venison. Shoulder ribeye sirloin turducken picanha pastrami...</p>
+                    </div>
+                </div>
+                <div class="commentFlex">
                     <figure><img src="./assets/comment-2.jpg" alt="Lisa's profile image"></figure>
-                    <h3>Wednesday October 10th, 2019 by Lisa</h3>
-                    <p>Alcatra beef jowl flank. Spare ribs tail pork loin tri-tip chislic tongue. Shank jerky t-bone, pig pork chop burgdoggen
-                    porchetta kielbasa biltong alcatra rump turkey ham hock chislic.</p>
-                    <form action="POST" class="commentForm">
-                        <!-- NOTE Are any of these fields required? -->
-                        <label for="name" class="srOnly">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Name">
-                        
-                        <label for="email" class="srOnly">Email Address</label>
-                        <input type="email" name="email" id="email" placeholder="Email address">
-                        
-                        <label for="comment" class="srOnly">Message</label>
-                        <textarea name="comment" id="comment" placeholder="Comment"></textarea>
-                        
-                        <button type="submit">Post Comment</button>
-                    </form>
-                </section>
-            </div>
+                    <div class="comment">
+                        <h3>Wednesday October 10th, 2019 by Lisa</h3>
+                        <p>Alcatra beef jowl flank. Spare ribs tail pork loin tri-tip chislic tongue. Shank jerky t-bone, pig pork chop burgdoggen
+                        porchetta kielbasa biltong alcatra rump turkey ham hock chislic.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="wrapper">
+                <form action="POST" class="commentForm">
+                    <!-- NOTE Are any of these fields required? -->
+                    <label for="name" class="srOnly">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    
+                    <label for="email" class="srOnly">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="Email address">
+                    
+                    <label for="comment" class="srOnly">Message</label>
+                    <textarea name="comment" id="comment" placeholder="Comment"></textarea>
+                    
+                    <button type="submit">Post Comment</button>
+                </form>
+            </>
         </main>
     
         <!-- sits to the left of the main content -->
