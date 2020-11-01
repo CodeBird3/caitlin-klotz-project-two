@@ -4,6 +4,40 @@
     flex-direction: row-reverse;
 }
 
+// hide button at the end of the blog post until media query 1000px
+.asideSlide {
+    text-align: right;
+
+    label[for=moreInfo] {
+        visibility: hidden;
+        display: inline-block;
+        color: $pine;
+        background: $sunflowerYellow;
+        border: 2px solid $pine;
+        padding: 5px 7px 0;
+        margin: 20px 0;
+        
+        &:hover, &:focus {
+            color: $white;
+            background: $almostBlack;
+            border: 2px solid $white;
+        }
+    }
+}
+
+input[id=moreInfo] {
+    display: none;
+}
+
+.asideLabel {
+    visibility: hidden;
+    margin-left: calc(100% - 30px);
+
+    &:hover, &:focus {
+        color: $white;
+    }
+}
+
 // SECTION aside
 .blogAside {
     width: 40vw;
@@ -57,7 +91,7 @@
 .employment {
     border-left: 3px solid $sunflowerYellow;
     border-bottom: 3px solid $sunflowerYellow;
-    padding: 50px 75px 100px;
+    padding: 50px 75px 50px;
 
     h3 {
         padding-left: 4px;
@@ -73,6 +107,7 @@
     
     .commentFlex {
         display: flex;
+        flex-wrap: wrap;
         padding: 50px 0;
 
         figure {

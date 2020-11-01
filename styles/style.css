@@ -277,7 +277,8 @@ body a {
 
 h1, h2,
 .readMore,
-button[type=submit] {
+button[type=submit],
+label[for=moreInfo] {
   text-transform: uppercase;
 }
 
@@ -346,6 +347,10 @@ aside h2 {
           justify-content: space-between;
 }
 
+.asideLabel {
+  color: #ffd300;
+}
+
 form input, textarea {
   color: #ffffff;
   font-family: "Barlow", sans-serif;
@@ -358,7 +363,8 @@ form input:focus, textarea:focus {
   background: #ffffff;
 }
 
-button[type=submit] {
+button[type=submit],
+label[for=moreInfo] {
   font-family: "Josefin Sans", sans-serif;
   font-size: 2.24rem;
   text-align: center;
@@ -727,6 +733,39 @@ header h1 {
           flex-direction: row-reverse;
 }
 
+.asideSlide {
+  text-align: right;
+}
+
+.asideSlide label[for=moreInfo] {
+  visibility: hidden;
+  display: inline-block;
+  color: #2b331b;
+  background: #ffd300;
+  border: 2px solid #2b331b;
+  padding: 5px 7px 0;
+  margin: 20px 0;
+}
+
+.asideSlide label[for=moreInfo]:hover, .asideSlide label[for=moreInfo]:focus {
+  color: #ffffff;
+  background: #171b0e;
+  border: 2px solid #ffffff;
+}
+
+input[id=moreInfo] {
+  display: none;
+}
+
+.asideLabel {
+  visibility: hidden;
+  margin-left: calc(100% - 30px);
+}
+
+.asideLabel:hover, .asideLabel:focus {
+  color: #ffffff;
+}
+
 .blogAside {
   width: 40vw;
   padding-top: 80px;
@@ -777,7 +816,7 @@ header h1 {
 .employment {
   border-left: 3px solid #ffd300;
   border-bottom: 3px solid #ffd300;
-  padding: 50px 75px 100px;
+  padding: 50px 75px 50px;
 }
 
 .employment h3 {
@@ -796,6 +835,8 @@ header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 50px 0;
 }
 
@@ -935,25 +976,6 @@ footer a:hover, footer a:focus {
                     - change font-size of h2
                     - change line-height and centre h2
         */
-/* TODO
-            - width: 100% when aside becomes a slide out
-        */
-/* REVIEW
-                - image position when main content has 100vw
-            */
-/* TODO
-                - no side border when aside becomes a slide out
-            */
-/* REVIEW
-                - font-sizes when main content has 100vw
-            */
-/* TODO
-                - name input over email input on mobile view
-            */
-/* REVIEW does it make sense to make the aside a slide out?
-            - "more info" button at the end of "Employment Opportunities"
-            - maybe 1000px
-        */
 /* REVIEW
             - 600px
                 - contact info should be stacked on top of each other again
@@ -1066,6 +1088,46 @@ footer a:hover, footer a:focus {
     width: 100%;
     margin: 20px 0;
   }
+  .asideSlide label[for=moreInfo] {
+    visibility: visible;
+  }
+  .asideLabel {
+    visibility: visible;
+  }
+  .blogPageFlex {
+    position: relative;
+  }
+  .blogAside {
+    border: 3px solid #ffd300;
+    border-left: none;
+    width: 55vw;
+    position: absolute;
+    left: -55vw;
+    bottom: 930px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .blogAside h2 {
+    font-size: 2rem;
+  }
+  .blogAside p, .blogAside ul {
+    font-size: 1.6rem;
+  }
+  .blogAsideText {
+    padding-top: 36vw;
+  }
+  input[id=moreInfo]:checked + .blogAside {
+    left: 0;
+  }
+  .blogPage {
+    width: 100%;
+  }
+  .blogPage figure img {
+    width: 75%;
+  }
+  .blogPage .employment {
+    border-left: none;
+  }
   .contactBody {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1092,16 +1154,50 @@ footer a:hover, footer a:focus {
   }
 }
 
-/* MEDIA QUERY VALUES
-    - 600px
-        - contact page header
-        - home page header
-        - home page blog section
-        - home page about section
-        - footer font size?
-        - contact page info
-        - contact page form
-*/
+@media (max-width: 600px) {
+  .blogPage figure img {
+    width: calc(100% - 20px);
+  }
+  .employment, .comments {
+    padding: 25px 20px;
+    text-align: center;
+  }
+  .employment h2, .comments h2 {
+    font-size: 3.5rem;
+  }
+  .employment p, .employment label, .comments p, .comments label {
+    font-size: 1.6rem;
+  }
+  .comments .commentFlex {
+    padding: 25px 0;
+  }
+  .comments .commentFlex figure {
+    width: 50%;
+    margin: 10px auto;
+  }
+  .comments .commentFlex .comment {
+    width: 100%;
+    margin: 0;
+  }
+  form input {
+    width: 100%;
+  }
+  form input, form textarea {
+    margin: 20px 0;
+  }
+  .blogAside {
+    width: 100vw;
+    left: -100vw;
+    bottom: 1225px;
+  }
+  body footer {
+    font-size: 1.6rem;
+  }
+  body footer a {
+    font-size: inherit;
+  }
+}
+
 /* REVIEW
     MAYBE USE TRANSITIONS ON THINGS THAT CHANGE?
         - navBar

@@ -45,6 +45,10 @@
                 <p>Biltong tail bacon drumstick burgdoggen, tri-tip tenderloin jerky shank kielbasa meatball jowl prosciutto. Tri-tip turducken capicola shank pig. Picanha kevin swine flank. Andouille spare ribs corned beef, pork landjaeger bacon beef ribs chislic jerky ribeye kielbasa burgdoggen. Tail flank chicken t-bone beef hamburger.</p>
                 <p>Rump picanha doner, ham hock ball tip burgdoggen kielbasa pastrami tri-tip pork chop pancetta short ribs. Filet mignon swine beef ribs pork loin, ball tip landjaeger chicken turkey shoulder andouille t-bone sirloin rump fatback pork. Ground round chuck pork t-bone, jerky ham kielbasa turkey pig hamburger. Short loin kielbasa kevin, buffalo ham jowl burgdoggen tenderloin frankfurter cow drumstick porchetta.</p>
                 <p>Tail beef ribs leberkas pig, turducken andouille beef swine shankle. Tongue andouille porchetta doner landjaeger tenderloin. Alcatra tri-tip short loin ground round kevin pork chop shank hamburger jowl. Pork porchetta filet mignon ham hock ground round pancetta flank chuck beef landjaeger hamburger boudin.</p>
+                <!-- NOTE: for media query at 1000px -->
+                <div class="asideSlide">
+                    <label for="moreInfo" tabindex="0">More Info</label>
+                </div>
             </section>
             <section class="comments">
                 <h2 class="heading--small">Comments:</h2>
@@ -82,7 +86,9 @@
             </>
         </main>
     
-        <!-- sits to the left of the main content -->
+        <!-- NOTE sits to the left of the main content -->
+            <!-- NOTE this input is for the labels on lines 50 and 112 associated with the media query at 1000px -->
+        <input type="checkbox" name="asideSlide" id="moreInfo">
         <aside class="blogAside">
             <figure>
                 <img src="./assets/blogSideImage.jpg" alt="Maple Salmon over Steamed Vegetables">
@@ -102,6 +108,9 @@
                     </ul>
                 </section>
             </div>
+            <!-- NOTE label for inside the aside at media query 1000px -->
+            <!-- REVIEW how would have this label come after the other label (if clicked) without messing with the natural tabindex order? -->
+            <label for="moreInfo" class="asideLabel" tabindex="0">X</label>
         </aside>
     </div>
 

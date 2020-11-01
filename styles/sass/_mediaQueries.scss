@@ -62,39 +62,7 @@
 // !SECTION home page
 
 // SECTION blog page
-    // SECTION main content
-        /* TODO
-            - width: 100% when aside becomes a slide out
-        */
-
-        // SECTION figure
-            /* REVIEW
-                - image position when main content has 100vw
-            */
-        // !SECTION figure
-        // SECTION employment
-            /* TODO
-                - no side border when aside becomes a slide out
-            */
-            /* REVIEW
-                - font-sizes when main content has 100vw
-            */
-        // !SECTION employment
-        // SECTION comments
-            // NOTE no issues
-        // !SECTION comments
-        // SECTION comment form
-            /* TODO
-                - name input over email input on mobile view
-            */
-        // !SECTION comment form
-    // !SECTION main content
-    // SECTION aside
-        /* REVIEW does it make sense to make the aside a slide out?
-            - "more info" button at the end of "Employment Opportunities"
-            - maybe 1000px
-        */
-    // !SECTION aside
+    // NOTE complete
 // !SECTION blog page
 
 // SECTION contact page
@@ -286,6 +254,62 @@
 
     // SECTION blog page
         // blog page aside / blog page main content
+        // make more info labels visible
+    .asideSlide {
+
+        label[for=moreInfo] {
+            visibility: visible;
+        }
+    }
+
+    .asideLabel {
+        visibility: visible;
+    }
+
+        // slide aside section out of view
+    .blogPageFlex {
+        position: relative;
+    }
+    .blogAside {
+        border: 3px solid $sunflowerYellow;
+        border-left: none;
+        width: 55vw;
+        position: absolute;
+        left: -55vw;
+        bottom: 930px;
+        transition: all 1s;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p, ul {
+            font-size: 1.6rem;
+        }
+
+    }
+
+    .blogAsideText {
+        padding-top: 36vw;
+    }
+    
+        // bring aside section back into view when more info label is clicked
+    input[id=moreInfo]:checked + .blogAside {
+        left: 0;
+    }
+
+        // main content should fill the width of the screen, decrease figure size, remove left border
+    .blogPage {
+        width: 100%;
+
+        figure img {
+            width: 75%;
+        }
+
+        .employment {
+            border-left: none;
+        }
+    }
     // !SECTION blog page
     
     // SECTION contact page
@@ -317,14 +341,86 @@
     // !SECTION contact page
 }
 
+@media (max-width: 600px) {
+    // home page header
+    // contact page header
 
-/* MEDIA QUERY VALUES
-    - 600px
-        - contact page header
-        - home page header
-        - home page blog section
-        - home page about section
-        - footer font size?
-        - contact page info
-        - contact page form
-*/
+    // home page blog section
+    // home page about section
+
+    // SECTION blog page
+        // increase image width
+    .blogPage {
+        
+        figure img {
+            width: calc(100% - 20px);
+        }
+    }
+
+        // change font sizes in employment and comments sections
+    .employment, .comments {
+        padding: 25px 20px;
+        text-align: center;
+
+        h2 {
+            font-size: 3.5rem;
+        }
+
+        p, label {
+            font-size: 1.6rem;
+        }
+    }
+
+        // change figure and comment width and margin
+    .comments {
+
+        .commentFlex {
+            padding: 25px 0;
+
+            figure {
+                width: 50%;
+                margin: 10px auto;
+            }
+
+            .comment {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+
+        // stack form inputs vertically
+    form {
+
+        input {
+            width: 100%;
+        }
+
+        input, textarea {
+            margin: 20px 0;
+        }
+    }
+
+        // aside section: increase top padding, width, and position from the bottom
+    .blogAside {
+        width: 100vw;
+        left: -100vw;
+        bottom: 1225px;
+    }
+
+    // !SECTION blog page
+
+    // contact page info
+    // contact page form
+
+    // SECTION footer
+        // decrease footer font size
+    body footer {
+        font-size: 1.6rem;
+
+        a {
+            font-size: inherit;
+        }
+    }
+    // !SECTION footer
+}
