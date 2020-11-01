@@ -98,26 +98,19 @@
 // !SECTION blog page
 
 // SECTION contact page
-    /* TODO contact body
-        - flex-direction: column;
-            - width of both containers should become 100%
-    */
-    /* REVIEW
-        - 1000px
-            - change flex-direction
-    */
-
     // SECTION contact info
-        /* TODO contact body
-            - split contact info into two sections above the contact form
-                - social media and email
-                - phone number and mailing address
+        /* REVIEW
+            - 600px
+                - contact info should be stacked on top of each other again
         */
     // !SECTION contact info
     // SECTION contact form
         /* TODO
-            - when flex-direction changes, form position should no longer be absolute
             - name input over email input on mobile view
+        */
+        /* REVIEW
+            - 600px
+                - name and email inputs should be stacked
         */
     // !SECTION contact form
 // !SECTION contact page
@@ -296,7 +289,31 @@
     // !SECTION blog page
     
     // SECTION contact page
+        // change the flex direction of the content on the contact page
+    .contactBody {
+        flex-direction: column;
+    }
 
+    .contactInfo, .contactFormContainer {
+        width: 100%;
+    }
+
+        // split contact info into two columns above the contact form
+    .contactInfo {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+        text-align: right;
+
+        .mailingAddress {
+            margin: 0;
+        }
+    }
+
+        // change position of contact form to position static
+    .contactForm {
+        position: static;
+    }
     // !SECTION contact page
 }
 
@@ -308,4 +325,6 @@
         - home page blog section
         - home page about section
         - footer font size?
+        - contact page info
+        - contact page form
 */

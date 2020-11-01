@@ -954,22 +954,16 @@ footer a:hover, footer a:focus {
             - "more info" button at the end of "Employment Opportunities"
             - maybe 1000px
         */
-/* TODO contact body
-        - flex-direction: column;
-            - width of both containers should become 100%
-    */
 /* REVIEW
-        - 1000px
-            - change flex-direction
-    */
-/* TODO contact body
-            - split contact info into two sections above the contact form
-                - social media and email
-                - phone number and mailing address
+            - 600px
+                - contact info should be stacked on top of each other again
         */
 /* TODO
-            - when flex-direction changes, form position should no longer be absolute
             - name input over email input on mobile view
+        */
+/* REVIEW
+            - 600px
+                - name and email inputs should be stacked
         */
 @media (max-width: 1317px) {
   .about {
@@ -1072,6 +1066,30 @@ footer a:hover, footer a:focus {
     width: 100%;
     margin: 20px 0;
   }
+  .contactBody {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactInfo, .contactFormContainer {
+    width: 100%;
+  }
+  .contactInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 30px;
+    text-align: right;
+  }
+  .contactInfo .mailingAddress {
+    margin: 0;
+  }
+  .contactForm {
+    position: static;
+  }
 }
 
 /* MEDIA QUERY VALUES
@@ -1081,6 +1099,8 @@ footer a:hover, footer a:focus {
         - home page blog section
         - home page about section
         - footer font size?
+        - contact page info
+        - contact page form
 */
 /* REVIEW
     MAYBE USE TRANSITIONS ON THINGS THAT CHANGE?
