@@ -955,37 +955,11 @@ footer a:hover, footer a:focus {
         */
 /* REVIEW
             - 600px
-                - h2: 2.7rem
-                - p: 1.6rem, p0
-                - figure: 75vw?
-        */
-/* REVIEW
-            - 600px
-                - text-align centre for text cards
-                - figures to 75vw?
-        */
-/* REVIEW
-            - 600px
-                - decrease top/bottom padding?
-        */
-/* REVIEW
-            - 600px
                 - decrease top/bottom padding?
                 - reposition squareImage
                 - either:
                     - change font-size of h2
                     - change line-height and centre h2
-        */
-/* REVIEW
-            - 600px
-                - contact info should be stacked on top of each other again
-        */
-/* TODO
-            - name input over email input on mobile view
-        */
-/* REVIEW
-            - 600px
-                - name and email inputs should be stacked
         */
 @media (max-width: 1317px) {
   .about {
@@ -1155,6 +1129,47 @@ footer a:hover, footer a:focus {
 }
 
 @media (max-width: 600px) {
+  .about section h2 {
+    font-size: 2.7rem;
+  }
+  .about section p {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0;
+  }
+  .about figure {
+    width: 75vw;
+  }
+  .blogSection figure img {
+    width: 300px;
+  }
+  .blogSection .textCard.card2,
+  .blogSection .textCard.card3 {
+    text-align: center;
+  }
+  .blogSection .textCard.card2 h2,
+  .blogSection .textCard.card3 h2 {
+    font-size: 2.7rem;
+    padding: 0;
+  }
+  .blogSection .textCard.card2 a,
+  .blogSection .textCard.card3 a {
+    font-size: 1.6rem;
+  }
+  .homePageBurger img {
+    top: -125px;
+  }
+  .homePageGazpacho img {
+    bottom: auto;
+  }
+  .natureText h2 {
+    text-align: center;
+    line-height: 45px;
+    padding: 45px 0;
+  }
+  .natureImage {
+    width: 150px;
+  }
   .blogPage figure img {
     width: calc(100% - 20px);
   }

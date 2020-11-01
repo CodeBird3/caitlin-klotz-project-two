@@ -26,25 +26,13 @@
 
 // SECTION home page
     // SECTION about
-        /* REVIEW
-            - 600px
-                - h2: 2.7rem
-                - p: 1.6rem, p0
-                - figure: 75vw?
-        */
+        // NOTE complete
     // !SECTION about
     // SECTION blog
-        /* REVIEW
-            - 600px
-                - text-align centre for text cards
-                - figures to 75vw?
-        */
+        // NOTE complete
     // !SECTION blog
     // SECTION contest
-        /* REVIEW
-            - 600px
-                - decrease top/bottom padding?
-        */
+        // NOTE complete
     // !SECTION contest
     // SECTION nature
         /* REVIEW
@@ -66,21 +54,7 @@
 // !SECTION blog page
 
 // SECTION contact page
-    // SECTION contact info
-        /* REVIEW
-            - 600px
-                - contact info should be stacked on top of each other again
-        */
-    // !SECTION contact info
-    // SECTION contact form
-        /* TODO
-            - name input over email input on mobile view
-        */
-        /* REVIEW
-            - 600px
-                - name and email inputs should be stacked
-        */
-    // !SECTION contact form
+    // NOTE complete
 // !SECTION contact page
 
 @media (max-width: 1317px) {
@@ -345,8 +319,69 @@
     // home page header
     // contact page header
 
-    // home page blog section
-    // home page about section
+    // SECTION home page
+        // decrease font sizes and increase figure size in about section
+    .about {
+        
+        section {
+
+            h2 {
+                font-size: 2.7rem;
+            }
+    
+            p {
+                font-size: 1.6rem;
+                text-align: center;
+                padding: 0;
+            }
+        }
+
+        figure {
+            width: 75vw;
+        }
+    }
+
+        // centre align text in text cards and increase figure size in blog section
+    .blogSection {
+        
+        figure img {
+            width: 300px;
+        }
+        
+        .textCard.card2,
+        .textCard.card3 {
+            text-align: center;
+            
+            & h2 {
+                font-size: 2.7rem;
+                padding: 0;
+            }
+            
+            & a {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    
+    .homePageBurger img {
+        top: -125px;
+    }
+
+    .homePageGazpacho img {
+        bottom: auto;
+    }
+
+        // centre heading and change figure width in nature section
+    .natureText h2 {
+        text-align: center;
+        line-height: 45px;
+        padding: 45px 0;
+    }
+
+    .natureImage {
+        width: 150px;
+    }    
+    // !SECTION home page
 
     // SECTION blog page
         // increase image width
