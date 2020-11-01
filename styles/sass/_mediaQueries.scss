@@ -389,7 +389,7 @@
         }
     }
 
-        // stack form inputs vertically
+        // stack form inputs vertically for blog page form and contact page form
     form {
 
         input {
@@ -410,8 +410,35 @@
 
     // !SECTION blog page
 
-    // contact page info
-    // contact page form
+    // SECTION contact page
+        // decrease body padding
+    .contactBody {
+        padding: 80px 0 100px;
+    }
+
+        // contact info should be stacked vertically, decrease paragraph font size
+    .contactInfo {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 50px;
+
+        p {
+            font-size: 1.6rem;
+        }
+
+        .socialMedia {
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+    }
+    
+        // decrease padding and box-shadow on contact page form
+    .contactForm {
+        padding: 20px;
+        box-shadow: 15px 15px $sunflowerYellow;
+    }
+    // !SECTION contact page
 
     // SECTION footer
         // decrease footer font size
