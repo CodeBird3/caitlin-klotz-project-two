@@ -12,15 +12,18 @@ header {
 }
     // home page
 .homeHeader {
-    background-image: url(#{$imagePath}/homeHeader.jpg);
+    background-image: url(#{$imagePath}/homeHeader.jpg), linear-gradient($pine, $pine);
+    background-repeat: no-repeat;
 }
     // blog page
 .blogHeader {
-    background-image: url(#{$imagePath}/blogHeader.jpg);
+    background-image: url(#{$imagePath}/blogHeader.jpg), linear-gradient($pine, $pine);
+    background-repeat: no-repeat;
 }
     // contact page
 .contactHeader {
-    background-image: url(#{$imagePath}/contactHeader.jpg);
+    background-image: url(#{$imagePath}/contactHeader.jpg), linear-gradient($pine, $pine);
+    background-repeat: no-repeat;
 }
 
 .blogHeader h1,

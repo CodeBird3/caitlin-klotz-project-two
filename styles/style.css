@@ -421,15 +421,21 @@ header h1 {
 }
 
 .homeHeader {
-  background-image: url(../assets/homeHeader.jpg);
+  background-image: url(../assets/homeHeader.jpg), -webkit-gradient(linear, left top, left bottom, from(#2b331b), to(#2b331b));
+  background-image: url(../assets/homeHeader.jpg), linear-gradient(#2b331b, #2b331b);
+  background-repeat: no-repeat;
 }
 
 .blogHeader {
-  background-image: url(../assets/blogHeader.jpg);
+  background-image: url(../assets/blogHeader.jpg), -webkit-gradient(linear, left top, left bottom, from(#2b331b), to(#2b331b));
+  background-image: url(../assets/blogHeader.jpg), linear-gradient(#2b331b, #2b331b);
+  background-repeat: no-repeat;
 }
 
 .contactHeader {
-  background-image: url(../assets/contactHeader.jpg);
+  background-image: url(../assets/contactHeader.jpg), -webkit-gradient(linear, left top, left bottom, from(#2b331b), to(#2b331b));
+  background-image: url(../assets/contactHeader.jpg), linear-gradient(#2b331b, #2b331b);
+  background-repeat: no-repeat;
 }
 
 .blogHeader h1,
@@ -1199,6 +1205,12 @@ footer a:hover, footer a:focus {
 @media (max-width: 600px) {
   .navBar {
     right: 0;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h1 span {
+    height: 4rem;
   }
   .about section h2 {
     font-size: 2.7rem;
