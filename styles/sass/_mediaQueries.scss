@@ -336,8 +336,18 @@
     }
     // !SECTION navigation
 
+    // SECTION header
+        // decrease header font
+    h1 {
+        font-size: 4rem;
+
+        span {
+            height: 4rem;
+        }
+    }
     // home page header
     // contact page header
+    // !SECTION header
 
     // SECTION home page
         // decrease font sizes and increase figure size in about section
