@@ -30,18 +30,56 @@ header {
 
 // navigation styles
 .navBar {
-    display: flex;
-    list-style: none;
-    padding-top: 20px;
     
-    a {
-        text-decoration: none;
-        padding: 15px 30px;
-        color: inherit;
-    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
 
-    a:hover,
-    a:focus {
-        border-bottom: 2px solid $sunflowerYellow;
+        a {
+            text-decoration: none;
+            padding: 15px 30px;
+            color: inherit;
+        }
+    
+        a:hover, a:focus {
+            border-bottom: 2px solid $sunflowerYellow;
+        }
     }
+}
+
+// drop down menu styles
+header input {
+    visibility: hidden;
+
+}
+
+.menuToggle {
+    visibility: hidden;
+
+    span {
+        display: block;
+        background: $white;
+        border-radius: 5px;
+        width: 40px;
+        height: 5px;
+        margin-bottom: 5px;
+        // position: relative;
+        // go through each element that will transition and determine timing, etc.
+        transition: transform 1s, background 0.5s;
+    }
+}
+
+input:checked + .menuToggle label span {
+    transform: rotate(45deg) translate(4px, 10px);
+    // background: $almostBlack;
+}
+
+input:checked + .menuToggle label span:nth-child(2) {
+    transform: rotate(0deg);
+    opacity: 0;
+}
+
+input:checked + .menuToggle label span:last-child {
+    transform: rotate(-45deg) translate(4px, -10px)
 }

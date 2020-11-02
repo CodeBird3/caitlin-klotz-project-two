@@ -24,39 +24,6 @@
     // !SECTION contact page
 // !SECTION header
 
-// SECTION home page
-    // SECTION about
-        // NOTE complete
-    // !SECTION about
-    // SECTION blog
-        // NOTE complete
-    // !SECTION blog
-    // SECTION contest
-        // NOTE complete
-    // !SECTION contest
-    // SECTION nature
-        /* REVIEW
-            - 600px
-                - decrease top/bottom padding?
-                - reposition squareImage
-                - either:
-                    - change font-size of h2
-                    - change line-height and centre h2
-        */
-    // !SECTION nature
-    // SECTION gallery
-        // NOTE complete
-    // !SECTION gallery
-// !SECTION home page
-
-// SECTION blog page
-    // NOTE complete
-// !SECTION blog page
-
-// SECTION contact page
-    // NOTE complete
-// !SECTION contact page
-
 @media (max-width: 1317px) {
     // SECTION home page
         // increase top padding for about section
@@ -171,7 +138,53 @@
     
 @media (max-width: 1000px) {
     // SECTION navigation
-        // navbar to sliding menu
+        // create drop down menu
+        // make hamburger menu visible
+        .menuToggle {
+            visibility: visible;
+
+            label[for=dropDownMenu] {
+                padding: 10px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 10;
+            }
+        }
+
+        // change navbar layout to vertical and fix the position so the menu can be accessed at any time on the page
+    .navBar {
+        background: $sunflowerYellow;
+        width: 85vw;
+        position: fixed;
+        top: -300px;
+        transition: top 1s;
+        z-index: 20;
+
+        li {
+            width: 100%;
+            
+            a {
+                display: inline-block;
+                width: 100%;
+                color: $almostBlack;
+                border-bottom: 3px solid $almostBlack;
+                transition: all 0.5s;
+
+                &:hover, &:focus {
+                    background: $pine;
+                    text-transform: uppercase;
+                    color: $white;
+                    border-bottom: 3px solid $white;
+                }
+            }
+        }
+    }
+
+        // drop menu down when hamburger menu is clicked
+    header input:checked ~ .navBar {
+        top: 0;
+    }
     // !SECTION navigation
     
     // SECTION home page
@@ -316,6 +329,13 @@
 }
 
 @media (max-width: 600px) {
+    // SECTION navigation
+        // fix drop down menu to the right so the hamburger icon does not overlap the menu
+    .navBar {
+        right: 0;
+    }
+    // !SECTION navigation
+
     // home page header
     // contact page header
 
